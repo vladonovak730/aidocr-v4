@@ -1,4 +1,4 @@
-import {Divider} from "../../../components/ui/Divider.tsx";
+import { Divider } from "../../../components/ui/Divider.tsx";
 
 export const IntelligenceLayer = () => {
   return (
