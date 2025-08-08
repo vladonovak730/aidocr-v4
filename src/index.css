@@ -48,16 +48,8 @@ h1 {
   @apply 8xl:mb-[49px] 8xl:text-[55px] 7xl:text-[55px] 7xl:mb-8.75 4xl:text-[38px] 3xl:text-[32px] 2xl:text-[30px] 2xl:mb-7.5 mb-5 text-[26px] leading-h1 
 }
 
-/* p {
-  @apply 7xl:text-[18px] 7xl:mb-[45px] 4xl:-mt-3.75 4xl:-mb-10  mb-7.5
-} */
-
 .description {
   @apply font-normal leading-[1.67] text-center 4xl:mt-[-15px] 4xl:mb-[40px] text-[17px] mb-7.5
-}
-
-.divider {
-  @apply border-none h-[1px] p-0 bg-divider my-[15px] w-full
 }
 
 .grid-item-text {
@@ -66,11 +58,6 @@ h1 {
 
 .grid-item-title {
   @apply font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-0.5
-}
-
-.section {
-  @apply 7xl:py-20 5xl:py-[65px] 2xl:py-[50px] py-10
-
 }
 
 .grid-layer {
@@ -99,10 +86,6 @@ h1 {
 
 .text {
   @apply 4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px]
-}
-
-.title2 {
-  @apply font-bold leading-[1.11] text-left 7xl:text-[45px] 6xl:text-[42px] 4xl:text-[38px] 3xl:text-[32px] text-[26px] 7xl:mb-[50px] 3xl:mb-4 mb-[20px]
 }
 
 .title {

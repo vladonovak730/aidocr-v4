@@ -3,11 +3,15 @@ import clsx from "clsx";
 
 interface ISectionProps extends PropsWithChildren {
   className?: string;
+  id?: string;
 }
 
-export const Section: FC<ISectionProps> = ({ children, className }) => {
+export const Section: FC<ISectionProps> = ({ children, className, id }) => {
   return (
-    <div className={clsx("7xl:py-20 5xl:py-[65px] 2xl:py-[50px] py-10", className)}>
+    <div
+      id={id}
+      className={clsx("7xl:py-20 5xl:py-[65px] 2xl:py-[50px] py-10", className)}
+    >
       {children}
     </div>
   );

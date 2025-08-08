@@ -1,6 +1,7 @@
 import React from "react";
 import { Section } from "../../../components/section";
 import { SOLUTIONS } from "./constants";
+import {Divider} from "../../../components/ui/Divider.tsx";
 
 export const SolutionsList = () => {
   return (
@@ -39,7 +40,7 @@ export const SolutionsList = () => {
               {index < SOLUTIONS.length - 1 && (
                 <>
                   <br />
-                  <hr className="divider" />
+                  <Divider />
                   <br />              
                 </>
               )}              

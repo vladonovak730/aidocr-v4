@@ -19,7 +19,7 @@ export const ImmediateValue = () => {
           {IMMEDIATE_VALUES.map(item => (
             <div key={item.value} className="grid-item">
               <div className="w-full">
-                <h3 className="title2">{item.value}</h3>
+                <h3 className="font-bold leading-[1.11] text-left 7xl:text-[45px] 6xl:text-[42px] 4xl:text-[38px] 3xl:text-[32px] text-[26px] 7xl:mb-[50px] 3xl:mb-4 mb-[20px]">{item.value}</h3>
                 <p className="grid-item-title">{item.title}</p>
                 <p className="grid-item-text">{item.description}</p>
               </div>

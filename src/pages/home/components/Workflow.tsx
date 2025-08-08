@@ -1,8 +1,9 @@
 import { WORKFLOW_ITEMS } from "./constants";
+import { Section } from "../../../components/section";
 
 export const Workflow = () => {
   return (
-    <div className="section" id="explore">
+    <Section>
       <div className="container">
         <h1 className="text-center">
           Built for everyone in engineering, construction, and operations of buildings
@@ -27,6 +28,6 @@ export const Workflow = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Section>
   );
 }

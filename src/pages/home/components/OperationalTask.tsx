@@ -1,4 +1,5 @@
 import { OPERATION_TASKS } from "./constants";
+import {Divider} from "../../../components/ui/Divider.tsx";
 
 export const OperationalTask = () => {
   return (
@@ -18,7 +19,7 @@ export const OperationalTask = () => {
           {OPERATION_TASKS.map((task) => (
             <div key={task.title} className="grid-item">
               <div>
-                <hr className="divider"></hr>
+                <Divider />
                 <div className="grid-item-title">{task.title}</div>
                 <div className="grid-item-text">{task.description}</div>
               </div>              

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import {Divider} from "../../../components/ui/Divider.tsx";
 
 export const IntelligenceLayer = () => {
   return (
@@ -21,7 +22,7 @@ export const IntelligenceLayer = () => {
             <button className="explore-button text-[12px] w-20 bg-white border-none p-0 text-left">
               <a href="#explore">
                 Explore
-                <hr className="border-none h-[1px] p-0 bg-divider my-2"></hr>
+                <Divider className="!my-[8px]" />
               </a>
             </button>
           </div>

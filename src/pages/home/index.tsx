@@ -5,6 +5,7 @@ import { OperationalTask } from "./components/OperationalTask";
 import { Projects } from "./components/Projects";
 import { Workflow } from "./components/Workflow";
 import { Layout } from "../../components/layout";
+import {Divider} from "../../components/ui/Divider.tsx";
 
 export const HomePage = () => {
   return (
@@ -15,15 +16,15 @@ export const HomePage = () => {
       <br />
       <Workflow />
       <div className="container">
-        <hr className="divider" />
+        <Divider />
       </div>
       <Projects />
       <div className="container">
-        <hr className="divider" />
+        <Divider />
       </div>
       <ImmediateValue />
       <div className="container">
-        <hr className="divider" />
+        <Divider />
       </div>
       <Journey />
     </Layout>

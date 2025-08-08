@@ -1,6 +1,7 @@
 import { Section } from "../../components/section";
 import { VERSION_OPTIONS } from "./constants";
 import { Layout } from "../../components/layout";
+import {Divider} from "../../components/ui/Divider.tsx";
 
 export const AboutPage = () => {
   return (
@@ -39,7 +40,7 @@ export const AboutPage = () => {
       </Section>
 
       <div className="container">
-        <hr className="divider" />        
+        <Divider />
       </div>
 
       <Section>
@@ -61,7 +62,7 @@ export const AboutPage = () => {
             <div className="workflow-content flex flex-col gap-[33.6px]">
               {VERSION_OPTIONS.map(item => (
                 <div key={item.title} className="flex flex-col gap-[15px]">
-                  <hr className="divider" />
+                  <Divider />
                   <h5>{item.title}</h5>
                   <p className="text">
                     {item.description}
