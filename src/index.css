@@ -105,7 +105,7 @@ h1 {
 }
 
 .workflow-image {
-  @apply 2xl:flex-[0.5] xl:w-[70%] xl:mx-auto w-[90%]
+  @apply 2xl:flex-[0.5] 2xl:w-full xl:w-[70%] xl:mx-auto w-[90%]
 }
 
 .list-title {

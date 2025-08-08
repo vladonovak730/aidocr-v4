@@ -53,7 +53,7 @@ export const Header = () => {
           <div className="flex flex-wrap items-center justify-between py-[16px] relative">
             <Link to="/" onClick={closeMenu}>
               <img 
-                className="h-[32] md:h-[40]" 
+                className="max-w-[115px]"
                 src="/assets/static/images/logo-header-color.svg" 
                 alt="Aidocr"
               />

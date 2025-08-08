@@ -28,13 +28,13 @@ export const Footer = () => {
             <div>
               <div className="font-bold mb-2 !text-white 5xl:text-[17px] text-[15px]">Made by Aidocr AG</div>
               <ul>
-                {MADE_BY_ADDRESSES.map((address, index) => <li key={index} className="mb-[15px]">{address}</li>)}
+                {MADE_BY_ADDRESSES.map((address, index) => <li key={index} className="mb-[15px] flex flex-col 2xl:items-start items-center">{address}</li>)}
               </ul>
             </div>
 
-            <div className="">
+            <div className="flex flex-col 2xl:items-start items-center">
               <h5 className="font-bold mb-2 !text-white 5xl:text-[17px] text-[15px]">Phone:</h5>
-              <ul>
+              <ul className="flex flex-col 2xl:items-start items-center">
                 {PHONES.map(phone => (
                   <li key={phone.number} className="mb-[15px]">
                     <a
@@ -47,7 +47,7 @@ export const Footer = () => {
                   </li>
                 ))}
 
-                <li className="mb-[15px]">
+                <li className="mb-[15px] flex flex-col 2xl:items-start items-center">
                   <div className="font-bold mb-2 !text-white 5xl:text-[17px] text-[15px]">Email:</div>
                   <a
                     className="hover:underline"
@@ -60,9 +60,9 @@ export const Footer = () => {
               </ul>
             </div>
 
-            <div className="">
+            <div className="flex flex-col 2xl:items-start items-center">
               <div className="font-bold mb-2 !text-white 5xl:text-[17px] text-[15px]">Useful links:</div>
-              <ul>
+              <ul className="flex flex-col 2xl:items-start items-center">
                 {USEFUL_LINKS.map((item, index) => (
                   <li key={index} className="mb-[15px]">
                     <Link className="hover:underline" to={item.link} target={item.target}>
