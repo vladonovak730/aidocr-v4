@@ -4,7 +4,7 @@ export const IntelligenceLayer = () => {
   return (
     <div className="!pt-[70px]">
       <div className="container">
-        <div className="grid 2xl:grid-cols-2 items-center">
+        <div className="grid 2xl:grid-cols-2 gap-[20px] items-center">
           <div className="flex flex-col justify-center 2xl:py-0 py-[40px] 2xl:items-start items-center">
             <h1 className="title 2xl:text-left text-center">
               The Intelligence Layer for Common Building Data
