@@ -5,6 +5,7 @@ import { AboutPage } from './pages/about';
 import { ContactPage } from "./pages/contact";
 import { PrivacyPolicy } from "./pages/privacy-policy";
 import { TermsPage } from "./pages/terms";
+import { DisclaimerPage} from "./pages/disclaimer";
 
 function App() {
   return (
