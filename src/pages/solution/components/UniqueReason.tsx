@@ -14,7 +14,7 @@ export const UniqueReason = () => {
           </p>
         </div>
         <div>
-          <div className={`workflow-layer`}>
+          <div className="workflow-layer">
             <div className="workflow-content flex flex-col gap-[33.6px]">
               {UNIQUE_REASONS.map(item => (
                 <div key={item.title} className="flex flex-col gap-[15px]">

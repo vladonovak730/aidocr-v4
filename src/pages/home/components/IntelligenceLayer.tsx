@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import {Divider} from "../../../components/ui/Divider.tsx";
 
 export const IntelligenceLayer = () => {
