@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Aidocr';
+  src: local('Aidocr'), url('/assets/fonts/aidocr.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
