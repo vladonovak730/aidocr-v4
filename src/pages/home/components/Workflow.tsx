@@ -3,7 +3,7 @@ import { Section } from "../../../components/section";
 
 export const Workflow = () => {
   return (
-    <Section>
+    <Section id="explore">
       <div className="container">
         <h1 className="text-center">
           Built for everyone in engineering, construction, and operations of buildings

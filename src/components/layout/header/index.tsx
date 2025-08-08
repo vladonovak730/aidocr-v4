@@ -48,41 +48,44 @@ export const Header = () => {
 
   return (
     <header className="h-auto flex flex-col" id="header">
-      <div className="bg-primary w-full h-[70px] shadow-header flex items-center flex-col z-10 fixed">
-        <div className="container">
-          <div className="flex flex-wrap items-center justify-between py-[16px] relative">
-            <Link to="/" onClick={closeMenu}>
-              <img 
-                className="max-w-[115px]"
-                src="/assets/static/images/logo-header-color.svg" 
-                alt="Aidocr"
-              />
-            </Link>
-            <nav>
-              <ul className={`4xl:relative flex 4xl:flex-row items-center fixed 4xl:top-auto 4xl:left-auto left-0 top-[70px] 4xl:h-auto overflow-hidden h-0 4xl:w-auto w-full flex-col justify-center transition-all duration-300 4xl:bg-transparent bg-[#122e52] ${isMenuOpen && 'h-[calc(100%-70px)] z-100'}`}>
-                {menus.map(menu => (
-                  <li key={menu.label} className={baseClass}>
-                    <Link 
-                      to={menu.link}
+      <div className="bg-primary w-full h-[70px] shadow-header z-10 fixed">
+        <div className="flex items-center h-full">
+          <div className="container">
+            <div className="flex flex-wrap items-center justify-between py-[16px] relative">
+              <Link to="/" onClick={closeMenu}>
+                <img
+                  className="max-w-[115px]"
+                  src="/assets/static/images/logo-header-color.svg"
+                  alt="Aidocr"
+                />
+              </Link>
+              <nav>
+                <ul
+                  className={`4xl:relative flex 4xl:flex-row items-center fixed 4xl:top-auto 4xl:left-auto left-0 top-[70px] 4xl:h-auto overflow-hidden h-0 4xl:w-auto w-full flex-col justify-center transition-all duration-300 4xl:bg-transparent bg-[#122e52] ${isMenuOpen && 'h-[calc(100%-70px)] z-100'}`}>
+                  {menus.map(menu => (
+                    <li key={menu.label} className={baseClass}>
+                      <Link
+                        to={menu.link}
+                        onClick={closeMenu}
+                      >
+                        {menu.label}
+                      </Link>
+                    </li>
+                  ))}
+                  <li className={baseClass}>
+                    <a
+                      href="https://app.aidocr.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       onClick={closeMenu}
                     >
-                      {menu.label}
-                    </Link>
+                      CLIENT LOG-IN
+                    </a>
                   </li>
-                ))}
-                <li className={baseClass}>
-                  <a 
-                    href="https://app.aidocr.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={closeMenu}
-                  >
-                    CLIENT LOG-IN
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <HamburgerButton onClick={toggleMenu} isActive={isMenuOpen} />
+                </ul>
+              </nav>
+              <HamburgerButton onClick={toggleMenu} isActive={isMenuOpen}/>
+            </div>
           </div>
         </div>
       </div>
