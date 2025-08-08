@@ -11,7 +11,7 @@ export const UserFocus = () => {
             For whom Aidocr <br/> is made for
           </h1>
           <br />
-          <p className="info-text description">
+          <p className="2xl:text-left text-center description">
             Whether you’re a planner, general contractor, or facility manager, Aidocr adapts to your role and the relevant task-related data. Aidocr is designed to be flexible and useful for its users from day one, eliminating the need for complex tool training.
           </p>
         </div>

@@ -39,7 +39,7 @@ export const ContactPage = () => {
             <h1 className="title 2xl:text-left text-center">
               Get in touch with us
             </h1>
-            <p className="info-text description">
+            <p className="2xl:text-left text-center description">
               We would love to hear from you! Whether you're interested in a live demo or discussing how to implement AI in your company, feel free to reach out.
             </p>
           </div>

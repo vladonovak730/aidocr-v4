@@ -17,7 +17,7 @@ export const SolutionPage = () => {
               What Aidocr <br/> Can Do for You
             </h1>
             <br />
-            <p className="info-text description">
+            <p className="2xl:text-left text-center description">
               Aidocr works like an intelligent assistant for all operational tasks across all data sources. Aidocr makes you smarter and significantly faster by enabling you to search all sources, tap into your entire knowledge, visualize both structured and unstructured data, and automate complete processes.
             </p>
           </div>

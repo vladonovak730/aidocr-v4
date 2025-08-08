@@ -9,7 +9,7 @@ export const UniqueReason = () => {
             What makes us unique
           </h1>
           <br />
-          <p className="info-text description">
+          <p className="2xl:text-left text-center description">
             Aidocr offers a very unique set of features that go beyond just document search - tailored to enterprise requirements , battle-tested, and grown by the demands of our clients.
           </p>
         </div>

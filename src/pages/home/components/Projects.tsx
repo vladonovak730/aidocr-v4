@@ -1,16 +1,17 @@
 import React from "react";
 import { BUILDING_KNOWLEDGE } from "./constants";
+import { Section } from "../../../components/section";
 
 export const Projects = () => {
   return (
-    <div className="section">
+    <Section>
       <div className="container">
         <div className="2xl:w-[60%]">
           <h1 className="title 2xl:text-left text-center">
             Chat with BIM, your project- or building knowledge
           </h1>
           <br />
-          <p className="info-text description">
+          <p className="2xl:text-left text-center description">
             Aidocr makes every step of your daily work simple and significantly faster. Just ask and get reliable and consistent responses.
           </p>
         </div>
@@ -53,6 +54,6 @@ export const Projects = () => {
           </React.Fragment>          
         ))}
       </div>
-    </div>
+    </Section>
   );
 }

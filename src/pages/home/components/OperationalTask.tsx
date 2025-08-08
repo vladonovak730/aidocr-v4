@@ -9,7 +9,7 @@ export const OperationalTask = () => {
             Aidocr is your personal assistant for operational task
           </h1>
           <br />
-          <p className="info-text description">
+          <p className="2xl:text-left text-center description">
             Stop searching – start finding. Aidocr easily connects to your systems and makes your data truly accessible. From technical plans to BIM, everything becomes searchable and usable - through one unified chat-interface.
           </p>
         </div>

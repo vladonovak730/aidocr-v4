@@ -14,7 +14,7 @@ export const AboutPage = () => {
               We understand the complexity of digitizing a whole industry
             </h1>
             <br />
-            <p className="info-text description">
+            <p className="2xl:text-left text-center description">
               The AEC/O industry works with a wide range of very specific data sources that are disconnected by several expert tools. This leads to huge inefficiencies and an unsolved complexity at work, resulting in a 90% loss of building data during its lifecycle. We want to change that with Aidocr.
             </p>
           </div>
@@ -49,7 +49,7 @@ export const AboutPage = () => {
               We share a big Vision
             </h1>
             <br />
-            <p className="info-text description">
+            <p className="2xl:text-left text-center description">
               We don't believe in AI replacing millions of jobs, but rather improving the way people work in their day-to-day tasks. That's why we aim to become the industry standard for building intelligence with Aidocr. To enable everyone in the AEC/O industry to run more intelligent and efficient operations.
             </p>
           </div>

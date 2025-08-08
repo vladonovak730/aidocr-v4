@@ -1,8 +1,9 @@
 import { JOURNEY } from "./constants";
+import { Section } from "../../../components/section";
 
 export const Journey = () => {
   return (
-    <div className="section">
+    <Section>
       <div className="container">
         <h3 className="title 2xl:text-left text-center">
           Your Journey to testdrive aidocr
@@ -24,7 +25,6 @@ export const Journey = () => {
           <img src="/assets/static/images/v4/team2.png" alt="Workflow" />
         </div>
       </div>
-
-    </div>
+    </Section>
   );
 }

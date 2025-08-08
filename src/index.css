@@ -56,24 +56,9 @@ h1 {
   @apply font-normal leading-[1.67] text-center 4xl:mt-[-15px] 4xl:mb-[40px] text-[17px] mb-7.5
 }
 
-.info-text {
-  @apply 2xl:text-left text-center
-  
-}
-
-.header__content-info .info__text {
-  text-align: left
-}
-@media (max-width:768px) {
-  .header__content-info .info__text {
-    text-align: center
-  }
-}
-
 .divider {
   @apply border-none h-[1px] p-0 bg-divider my-[15px] w-full
 }
-
 
 .grid-item-text {
   @apply font-normal 4xl:text-[18px] 3xl:text-[16px] text-[15px]

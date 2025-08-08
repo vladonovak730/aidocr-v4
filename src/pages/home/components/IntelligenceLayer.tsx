@@ -10,7 +10,7 @@ export const IntelligenceLayer = () => {
               The Intelligence Layer for Common Building Data
             </h1>
             <br/>
-            <p className="info-text description">
+            <p className="2xl:text-left text-center description">
               Aidocr is the first intelligent Assistant built for the AEC/O industry that understands all specific
               data sources. Search, act, visualize and automate across and between BIM, documents, plans, databases,
               and more. Work like never before - with Aidocr.
