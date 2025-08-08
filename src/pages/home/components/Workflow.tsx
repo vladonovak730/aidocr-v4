@@ -2,7 +2,7 @@ import { WORKFLOW_ITEMS } from "./constants";
 
 export const Workflow = () => {
   return (
-    <div className="section">
+    <div className="section" id="explore">
       <div className="container">
         <h1 className="text-center">
           Built for everyone in engineering, construction, and operations of buildings
@@ -27,7 +27,6 @@ export const Workflow = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 }

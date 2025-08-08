@@ -19,10 +19,10 @@ export const IntelligenceLayer = () => {
                  className="2xl:hidden block w-1/2 mx-auto"/>
             {/* <br /> */}
             <button className="explore-button text-[12px] w-20 bg-white border-none p-0 text-left">
-              <Link to="#explore">
+              <a href="#explore">
                 Explore
                 <hr className="border-none h-[1px] p-0 bg-divider my-2"></hr>
-              </Link>
+              </a>
             </button>
           </div>
           <div>
