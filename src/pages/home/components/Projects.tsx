@@ -19,8 +19,8 @@ export const Projects = () => {
         <br />
         {BUILDING_KNOWLEDGE.map((item, index) => (
           <React.Fragment key={item.title}>
-            <div key={item.title} className={`workflow-layer ${index % 2 === 0 ? "2xl:flex-row flex-col" : "2xl:!flex-row-reverse" }`}>
-              <div className="workflow-image">
+            <div key={item.title} className={`flex justify-between gap-[50px] 2xl:flex-row flex-col ${index % 2 === 0 ? "2xl:flex-row flex-col" : "2xl:!flex-row-reverse" }`}>
+              <div className="2xl:flex-[0.5] 2xl:w-full xl:w-[70%] xl:mx-auto w-[90%]">
                 <img src={item.image} alt={item.title} />
               </div>
 

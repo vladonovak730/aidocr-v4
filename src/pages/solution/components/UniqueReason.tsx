@@ -14,7 +14,7 @@ export const UniqueReason = () => {
           </p>
         </div>
         <div>
-          <div className="workflow-layer">
+          <div className="flex justify-between gap-[50px] 2xl:flex-row flex-col">
             <div className="workflow-content flex flex-col gap-[33.6px]">
               {UNIQUE_REASONS.map(item => (
                 <div key={item.title} className="flex flex-col gap-[15px]">
@@ -25,7 +25,7 @@ export const UniqueReason = () => {
                 </div>
               ))}
             </div>
-            <div className="workflow-image">
+            <div className="2xl:flex-[0.5] 2xl:w-full xl:w-[70%] xl:mx-auto w-[90%]">
               <img src="/assets/static/images/v4/thinking.png" alt="workflow" />
             </div>
           </div>

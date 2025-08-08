@@ -52,36 +52,8 @@ h1 {
   @apply font-normal leading-[1.67] 4xl:mt-[-15px] 4xl:mb-[40px] text-[17px] mb-7.5
 }
 
-.grid-item-text {
-  @apply font-normal 4xl:text-[18px] 3xl:text-[16px] text-[15px]
-}
-
-.grid-item-title {
-  @apply font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-0.5
-}
-
-.grid-layer {
-  @apply my-7.5 mr-5 gap-x-9 gap-y-7.5 flex flex-wrap items-start justify-start max-w-full basis-[45%]
-}
-
-.grid-item {
-  @apply 4xl:basis-[45%] flex flex-col 4xl:items-start 4xl:justify-center items-center basis-[100%]
-}
-
-.workflow-layer {
-  @apply flex justify-between gap-[50px] 2xl:flex-row flex-col
-}
-
 .workflow-content {
   @apply flex-[0.5]
-}
-
-.workflow-image {
-  @apply 2xl:flex-[0.5] 2xl:w-full xl:w-[70%] xl:mx-auto w-[90%]
-}
-
-.list-title {
-  @apply text-title mb-2 text-[0.83em] font-bold
 }
 
 .text {

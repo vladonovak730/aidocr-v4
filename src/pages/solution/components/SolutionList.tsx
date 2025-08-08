@@ -10,13 +10,13 @@ export const SolutionsList = () => {
         <div className="">
           {SOLUTIONS.map((item, index) => (
             <React.Fragment key={item.title}>
-              <div key={item.title} className="workflow-layer">
-                <div className="workflow-image">
+              <div key={item.title} className="flex justify-between gap-[50px] 2xl:flex-row flex-col">
+                <div className="2xl:flex-[0.5] 2xl:w-full xl:w-[70%] xl:mx-auto w-[90%]">
                   <img src={item.image} alt="workflow" />
                 </div>
                 <div className="workflow-content">
                   <div className="flex flex-col gap-2">
-                    <p className="list-title">{item.title}</p>
+                    <p className="text-title mb-2 text-[0.83em] font-bold">{item.title}</p>
                     <p className="text 2xl:text-left text-center">{item.description}</p>
                     <ul className="pl-2 list-disc">
                       <li className="workflow__content-list-item text">

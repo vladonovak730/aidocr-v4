@@ -55,8 +55,8 @@ export const AboutPage = () => {
             </p>
           </div>
 
-          <div className="workflow-layer">
-            <div className="workflow-image">
+          <div className="flex justify-between gap-[50px] 2xl:flex-row flex-col">
+            <div className="2xl:flex-[0.5] 2xl:w-full xl:w-[70%] xl:mx-auto w-[90%]">
               <img src="/assets/static/images/v4/escalator.png" alt="workflow" />
             </div>
             <div className="workflow-content flex flex-col gap-[33.6px]">

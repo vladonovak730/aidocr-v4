@@ -15,13 +15,13 @@ export const OperationalTask = () => {
           </p>
         </div>
 
-        <div className="grid-layer">
+        <div className="my-7.5 mr-5 gap-x-9 gap-y-7.5 flex flex-wrap items-start justify-start max-w-full basis-[45%]">
           {OPERATION_TASKS.map((task) => (
-            <div key={task.title} className="grid-item">
+            <div key={task.title} className="4xl:basis-[45%] flex flex-col 4xl:items-start 4xl:justify-center items-center basis-[100%]">
               <div>
                 <Divider />
-                <div className="grid-item-title">{task.title}</div>
-                <div className="grid-item-text">{task.description}</div>
+                <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-0.5">{task.title}</div>
+                <div className="font-normal 4xl:text-[18px] 3xl:text-[16px] text-[15px]">{task.description}</div>
               </div>              
             </div>
           ))}

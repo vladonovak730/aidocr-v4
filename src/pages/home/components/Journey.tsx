@@ -9,18 +9,18 @@ export const Journey = () => {
           Your Journey to testdrive aidocr
         </h3>
         <br />
-        <div className="grid-layer">
+        <div className="my-7.5 mr-5 gap-x-9 gap-y-7.5 flex flex-wrap items-start justify-start max-w-full basis-[45%]">
           {JOURNEY.map((item, index) => (
             <div key={item.title} className="4xl:basis-[45%] basis-[100%] flex items-start justify-center p-[24px] bg-primary">
               <div>
                 <h3 className="font-bold leading-[1.11] text-left 7xl:text-[45px] 6xl:text-[42px] 4xl:text-[38px] 3xl:text-[32px] text-[26px] 7xl:mb-[50px] 3xl:mb-4 mb-[20px]">{index + 1}.</h3>
-                <div className="grid-item-title">{item.title}</div>
-                <div className="grid-item-text">{item.description}</div>
+                <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-0.5">{item.title}</div>
+                <div className="font-normal 4xl:text-[18px] 3xl:text-[16px] text-[15px]">{item.description}</div>
               </div>
             </div>
           ))}
         </div>
-        <div className="workflow-image">
+        <div className="2xl:flex-[0.5] 2xl:w-full xl:w-[70%] xl:mx-auto w-[90%]">
           <br />
           <img src="/assets/static/images/v4/team2.png" alt="Workflow" />
         </div>
