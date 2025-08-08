@@ -14,7 +14,7 @@ export const ContactCard: FC<IContactCardProps> = ({image, title, contactInfos})
       <p className="font-bold 5xl:text-[19px] 5xl:my-[20px] text-[17px] my-2">{title}</p>
       <ul className="flex flex-col items-center gap-[10px]">
         {contactInfos.map((item) => (
-          <li key={item.value} className={clsx("5xl:text-[17px] text-[15px]", item.linkable && "hover:underline")}>
+          <li key={item.value} className={clsx("5xl:text-[17px] text-[15px]", item.linkable && "hover:underline cursor-pointer")}>
             {item.value}
           </li>
         ))}
