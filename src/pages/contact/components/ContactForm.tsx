@@ -48,7 +48,7 @@ export const ContactForm = () => {
           register={register}
           error={errors.message?.message}
         />
-        <CustomButton className="xl:w-[380px] w-full 5xl:text-[17px] text-[15px] button transition duration-300 ease font-semibold py-[10px] px-[25px] text-center rounded-[8px] border border-solid border-blue-light bg-blue-light text-white hover:text-blue-light hover:bg-white mx-auto" type="submit">Submit message</CustomButton>
+        <CustomButton className="2xl:w-[380px] w-full 5xl:text-[17px] text-[15px] button transition duration-300 ease font-semibold py-[10px] px-[25px] text-center rounded-[8px] border border-solid border-blue-light bg-blue-light text-white hover:text-blue-light hover:bg-white mx-auto" type="submit">Submit message</CustomButton>
       </FormWrapper>
 
     </div>

@@ -2,24 +2,24 @@ import { UNIQUE_REASONS } from "./constants";
 
 export const UniqueReason = () => {
   return (
-    <div className="8xl:py-20 6xl:py-16.25 5xl:py-12.5 py-10 ">
+    <div className="7xl:py-[80px] 5xl:py-[65px] 2xl:py-[50px] py-[40px]">
       <div className="container">
-        <div className="2xl:w-[60%]">
+        <div className="2xl:w-[60%] 2xl:py-0 py-[40px]">
           <h1 className="title 2xl:text-left text-center">
             What makes us unique
           </h1>
           <br />
-          <p className="2xl:text-left text-center description">
+          <h4 className="2xl:text-left text-center sub-title">
             Aidocr offers a very unique set of features that go beyond just document search - tailored to enterprise requirements , battle-tested, and grown by the demands of our clients.
-          </p>
+          </h4>
         </div>
         <div>
           <div className="flex justify-between gap-[50px] 2xl:flex-row flex-col">
             <div className="workflow-content flex flex-col gap-[33.6px]">
               {UNIQUE_REASONS.map(item => (
                 <div key={item.title} className="flex flex-col gap-[15px]">
-                  <h5>{item.title}</h5>
-                  <p className="text 2xl:text-left text-center">
+                  <h5 className="2xl:text-left text-center">{item.title}</h5>
+                  <p className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px] 2xl:text-left text-center">
                     {item.description}
                   </p>
                 </div>

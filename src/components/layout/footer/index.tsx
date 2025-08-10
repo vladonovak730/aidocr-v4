@@ -33,7 +33,7 @@ export const Footer = () => {
             </div>
 
             <div className="flex flex-col 2xl:items-start items-center">
-              <h5 className="font-bold mb-2 !text-white 5xl:text-[17px] text-[15px]">Phone:</h5>
+              <div className="font-bold mb-2 !text-white 5xl:text-[17px] text-[15px]">Phone:</div>
               <ul className="flex flex-col 2xl:items-start items-center">
                 {PHONES.map(phone => (
                   <li key={phone.number} className="mb-[15px]">

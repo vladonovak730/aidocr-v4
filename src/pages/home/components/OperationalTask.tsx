@@ -3,21 +3,21 @@ import {Divider} from "../../../components/ui/Divider.tsx";
 
 export const OperationalTask = () => {
   return (
-    <div className="8xl:py-20 6xl:py-16.25 5xl:py-12.5 py-10 bg-blue">
+    <div className="7xl:py-[80px] 5xl:py-[65px] 2xl:py-[50px] py-[40px] bg-blue">
       <div className="container">
-        <div className="2xl:w-[60%]">
+        <div className="2xl:w-[60%] 2xl:py-0 py-[40px]">
           <h1 className="title 2xl:text-left text-center">
             Aidocr is your personal assistant for operational task
           </h1>
           <br />
-          <p className="2xl:text-left text-center description">
+          <h4 className="2xl:text-left text-center sub-title">
             Stop searching – start finding. Aidocr easily connects to your systems and makes your data truly accessible. From technical plans to BIM, everything becomes searchable and usable - through one unified chat-interface.
-          </p>
+          </h4>
         </div>
 
-        <div className="my-7.5 mr-5 gap-x-9 gap-y-7.5 flex flex-wrap items-start justify-start max-w-full basis-[45%]">
+        <div className="my-7.5 gap-x-9 gap-y-7.5 grid 4xl:grid-cols-2 items-start justify-start max-w-full">
           {OPERATION_TASKS.map((task) => (
-            <div key={task.title} className="4xl:basis-[45%] flex flex-col 4xl:items-start 4xl:justify-center items-center basis-[100%]">
+            <div key={task.title} className="flex flex-col 4xl:items-start 4xl:justify-center items-center">
               <div>
                 <Divider />
                 <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-0.5">{task.title}</div>

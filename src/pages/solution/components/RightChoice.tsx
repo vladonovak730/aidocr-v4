@@ -2,9 +2,9 @@ import { RIGHT_CHOICES } from "./constants";
 
 export const RightChoice = () => {
   return (
-    <div className="8xl:py-20 6xl:py-16.25 5xl:py-12.5 py-10 ">
+    <div className="7xl:py-[80px] 5xl:py-[65px] 2xl:py-[50px] py-[40px]">
       <div className="container">
-        <div className="2xl:w-[60%]">
+        <div className="2xl:w-[60%] 2xl:py-0 py-[40px]">
           <h1 className="title 2xl:text-left text-center">
             Why Aidocr Is the Right Choice
           </h1>
@@ -18,8 +18,8 @@ export const RightChoice = () => {
             <div className="workflow-content flex flex-col gap-[33.6px]">
               {RIGHT_CHOICES.map(item => (
                 <div key={item.title} className="flex flex-col gap-[15px]">
-                  <h5>{item.title}</h5>
-                  <p className="text 2xl:text-left text-center">
+                  <h5 className="2xl:text-left text-center">{item.title}</h5>
+                  <p className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px] 2xl:text-left text-center">
                     {item.description}
                   </p>
                 </div>
