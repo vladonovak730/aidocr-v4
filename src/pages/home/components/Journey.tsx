@@ -9,7 +9,7 @@ export const Journey = () => {
           Your Journey to testdrive aidocr
         </h3>
         <br />
-        <div className="my-7.5 gap-x-9 gap-y-7.5 grid 2xl:grid-cols-2 items-start justify-start max-w-full">
+        <div className="my-4 gap-x-[36px] gap-y-4 grid 2xl:grid-cols-2 items-start justify-start max-w-full">
           {JOURNEY.map((item, index) => (
             <div key={item.title} className="flex items-start justify-center p-[24px] bg-primary">
               <div>

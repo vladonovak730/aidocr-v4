@@ -20,7 +20,7 @@ export const AboutPage = () => {
             </h4>
           </div>
 
-          <div className="flex 4xl:flex-wrap 4xl:flex-row flex-col flex-nowrap gap-x-[58px] gap-y-[30px] my-[30px]">
+          <div className="flex 4xl:flex-wrap 4xl:flex-row flex-col flex-nowrap gap-x-[58px] gap-y-4 my-4">
             <div className="p-[24px] bg-primary basis-[30%]">
               <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-[2px]">Escalating operational costs</div>
               <div className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px]">Inefficient, manual processes drive up labor costs, increase error rates, and cause delays of up to 30%. This results in $177b in avoidable losses every year.</div>
@@ -61,7 +61,7 @@ export const AboutPage = () => {
             </div>
             <div className="workflow-content flex flex-col 2xl:gap-[33.6px]">
               {VERSION_OPTIONS.map(item => (
-                <div key={item.title} className="flex flex-col gap-[15px]">
+                <div key={item.title} className="flex flex-col gap-2">
                   <Divider />
                   <h5 className="2xl:text-left text-center">{item.title}</h5>
                   <p className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px] 2xl:text-left text-center">

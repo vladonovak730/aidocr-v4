@@ -25,7 +25,7 @@ export const Projects = () => {
               </div>
 
               <div className="workflow-content">
-                <div className="flex flex-col gap-[15px]">
+                <div className="flex flex-col gap-2">
                   <h5 className="2xl:text-left text-center">{item.title}</h5>
                   <p className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px] 2xl:text-left text-center">
                     {item.examples.map((example, ind) => (

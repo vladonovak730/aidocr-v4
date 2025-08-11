@@ -28,7 +28,7 @@ export const Footer = () => {
             <div>
               <div className="font-bold mb-2 !text-white 5xl:text-[17px] text-[15px]">Made by Aidocr AG</div>
               <ul>
-                {MADE_BY_ADDRESSES.map((address, index) => <li key={index} className="mb-[15px] flex flex-col 2xl:items-start items-center">{address}</li>)}
+                {MADE_BY_ADDRESSES.map((address, index) => <li key={index} className="mb-2 flex flex-col 2xl:items-start items-center">{address}</li>)}
               </ul>
             </div>
 
@@ -36,7 +36,7 @@ export const Footer = () => {
               <div className="font-bold mb-2 !text-white 5xl:text-[17px] text-[15px]">Phone:</div>
               <ul className="flex flex-col 2xl:items-start items-center">
                 {PHONES.map(phone => (
-                  <li key={phone.number} className="mb-[15px]">
+                  <li key={phone.number} className="mb-2">
                     <a
                       className="hover:underline"
                       property="telephone"
@@ -47,7 +47,7 @@ export const Footer = () => {
                   </li>
                 ))}
 
-                <li className="mb-[15px] flex flex-col 2xl:items-start items-center">
+                <li className="mb-2 flex flex-col 2xl:items-start items-center">
                   <div className="font-bold mb-2 !text-white 5xl:text-[17px] text-[15px]">Email:</div>
                   <a
                     className="hover:underline"
@@ -64,7 +64,7 @@ export const Footer = () => {
               <div className="font-bold mb-2 !text-white 5xl:text-[17px] text-[15px]">Useful links:</div>
               <ul className="flex flex-col 2xl:items-start items-center">
                 {USEFUL_LINKS.map((item, index) => (
-                  <li key={index} className="mb-[15px]">
+                  <li key={index} className="mb-2">
                     <Link className="hover:underline" to={item.link} target={item.target}>
                       {item.label}
                     </Link>
@@ -77,7 +77,7 @@ export const Footer = () => {
       </div>
 
       <div
-        className="text-base bg-blue-dark py-4 2xl:text-[16px] 2xl:leading-[1.11] text-[14px] leading-[1.7] 2xl:text-left text-center">
+        className="text-base bg-blue-dark py-[16px] 2xl:text-[16px] 2xl:leading-[1.11] text-[14px] leading-[1.7] 2xl:text-left text-center">
         <div className="container">
           © Copyright by Aidocr AG, Switzerland. All Rights Reserved
         </div>

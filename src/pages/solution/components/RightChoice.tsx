@@ -17,7 +17,7 @@ export const RightChoice = () => {
             </div>
             <div className="workflow-content flex flex-col gap-[33.6px]">
               {RIGHT_CHOICES.map(item => (
-                <div key={item.title} className="flex flex-col gap-[15px]">
+                <div key={item.title} className="flex flex-col gap-2">
                   <h5 className="2xl:text-left text-center">{item.title}</h5>
                   <p className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px] 2xl:text-left text-center">
                     {item.description}

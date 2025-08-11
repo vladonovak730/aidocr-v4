@@ -16,7 +16,7 @@ export const Workflow = () => {
           <img src="/assets/static/images/v4/aidocr_dashboard.png" alt="Workflow"></img>
           <br />
           <br />
-          <div className="my-7.5 gap-x-9 gap-y-7.5 items-start justify-start max-w-full grid 4xl:grid-cols-2">
+          <div className="my-4 gap-x-[36px] gap-y-4 items-start justify-start max-w-full grid 4xl:grid-cols-2">
             {WORKFLOW_ITEMS.map((task) => (
               <div key={task.title} className="flex flex-col 4xl:items-start 4xl:justify-center items-center">
                 <div>

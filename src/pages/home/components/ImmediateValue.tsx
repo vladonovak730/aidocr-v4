@@ -15,7 +15,7 @@ export const ImmediateValue = () => {
           </h4>
         </div>
         <br />
-        <div className="my-7.5 gap-x-9 gap-y-7.5 grid 4xl:grid-cols-2 items-start justify-start max-w-full">
+        <div className="my-4 gap-x-[36px] gap-y-4 grid 4xl:grid-cols-2 items-start justify-start max-w-full">
           {IMMEDIATE_VALUES.map(item => (
             <div key={item.value} className="flex flex-col 4xl:items-start 4xl:justify-center items-center">
               <div className="w-full">

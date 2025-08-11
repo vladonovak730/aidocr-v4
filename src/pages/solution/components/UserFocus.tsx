@@ -19,7 +19,7 @@ export const UserFocus = () => {
           {USER_TARGETS.map(item => (
             <div key={item.title} className="">
               <h5 className="2xl:text-left text-center">{item.title}</h5>
-              <div className="flex 4xl:flex-wrap 4xl:flex-row flex-col flex-nowrap gap-x-[58px] gap-y-[30px] my-[30px]">
+              <div className="flex 4xl:flex-wrap 4xl:flex-row flex-col flex-nowrap gap-x-[58px] gap-y-4 my-4">
                 <div className="p-[24px] bg-primary basis-[30%]">
                   <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-[2px]">Problem</div>
                   <div className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px]">{item.problem}</div>

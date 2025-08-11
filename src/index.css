@@ -61,7 +61,7 @@ h1 {
 } */
 
 .title {
-  @apply leading-[1.11] 7xl:text-[55px] 7xl:mb-[50px] 6xl:text-[42px] 4xl:text-[38px] 3xl:text-[32px] 3xl:mb-[42px] xs:text-[30px] xs:mb-[30px] text-[26px] mb-[20px]
+  @apply leading-[1.11] 7xl:text-[55px] 7xl:mb-[50px] 6xl:text-[42px] 4xl:text-[38px] 3xl:text-[32px] 3xl:mb-[42px] xs:text-[30px] xs:mb-4 text-[26px] mb-[20px]
 }
 
 input,
@@ -74,5 +74,5 @@ h5 {
 }
 
 .sub-title {
-  @apply 3xl:text-[24px] text-[18px] 4xl:mt-[-15px] 4xl:mb-[40px] mb-7.5 text-black font-normal
+  @apply 3xl:text-[24px] text-[18px] 7xl:mt-0 mt-[-15px] 4xl:mb-[40px] mb-4 text-black font-normal
 }

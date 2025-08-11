@@ -33,7 +33,7 @@ export const TextInput: FC<Props> = ({
         {...(onChange && { onChange })}
         {...(onBlur && { onBlur })}
         value={value}
-        className={clsx("border-transparent focus:border-black rounded-0 border-[1px] focus:outline-[1px] py-[15px] px-[25px] bg-white w-full transition-all duration-300 ease-in-out font-light text-black text-[15px] placeholder-black outline-none", error && "focus:!border-red-500", value && !error && "focus:!border-green-800")}
+        className={clsx("border-transparent focus:border-black rounded-0 border-[1px] focus:outline-[1px] py-2 px-[25px] bg-white w-full transition-all duration-300 ease-in-out font-light text-black text-[15px] placeholder-black outline-none", error && "focus:!border-red-500", value && !error && "focus:!border-green-800")}
       />
     </div>
   );
