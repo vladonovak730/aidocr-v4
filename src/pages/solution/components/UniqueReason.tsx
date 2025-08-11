@@ -1,3 +1,5 @@
+import { SubTitle } from '../../../components/ui/SubTitle';
+import { Title } from '../../../components/ui/Title';
 import { UNIQUE_REASONS } from './constants';
 
 export const UniqueReason = () => {
@@ -5,15 +7,15 @@ export const UniqueReason = () => {
     <div className="7xl:py-[80px] 5xl:py-[65px] 2xl:py-[50px] py-[40px]">
       <div className="container">
         <div className="2xl:w-[60%] 2xl:py-0 py-[40px]">
-          <h1 className="title 2xl:text-left text-center">
+          <Title>
             What makes us unique
-          </h1>
+          </Title>
           <br />
-          <h4 className="2xl:text-left text-center sub-title">
+          <SubTitle>
             Aidocr offers a very unique set of features that go beyond just
             document search - tailored to enterprise requirements ,
             battle-tested, and grown by the demands of our clients.
-          </h4>
+          </SubTitle>
         </div>
         <div>
           <div className="flex justify-between gap-[50px] 2xl:flex-row flex-col">

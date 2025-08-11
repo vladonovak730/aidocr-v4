@@ -1,17 +1,19 @@
 import { JOURNEY } from './constants';
 import { Section } from '../../../components/section';
+import { Card } from '../../../components/ui/Card';
+import { Title } from '../../../components/ui/Title';
 
 export const Journey = () => {
   return (
     <Section>
       <div className="container">
-        <h3 className="title 2xl:text-left text-center">
+        <Title className="!text-center">
           Your Journey to testdrive aidocr
-        </h3>
+        </Title>
         <br />
         <div className="my-4 gap-x-[36px] gap-y-4 grid 2xl:grid-cols-2 items-start justify-start max-w-full">
           {JOURNEY.map((item, index) => (
-            <div
+            <Card
               key={item.title}
               className="flex items-start justify-center p-[24px] bg-primary"
             >
@@ -26,7 +28,7 @@ export const Journey = () => {
                   {item.description}
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
         <div className="2xl:flex-[0.5] 2xl:w-full xl:w-[70%] xl:mx-auto w-[90%]">

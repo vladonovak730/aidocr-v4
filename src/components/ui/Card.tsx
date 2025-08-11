@@ -7,7 +7,7 @@ interface ICardProps extends PropsWithChildren {
 
 export const Card: FC<ICardProps> = ({ children, className }) => {
   return (
-    <div className={clsx("flex flex-col 4xl:items-start 4xl:justify-center items-center", className)}>
+    <div className={clsx("flex items-start justify-center p-[24px] bg-primary", className)}>
       {children}            
     </div>
   );

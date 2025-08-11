@@ -1,6 +1,9 @@
 import { Section } from '../../components/section';
-import { VERSION_OPTIONS } from './constants';
+import { COMPLEXITIES, VERSION_OPTIONS } from './constants';
 import { Divider } from '../../components/ui/Divider';
+import { Card } from '../../components/ui/Card';
+import { Title } from '../../components/ui/Title';
+import { SubTitle } from '../../components/ui/SubTitle';
 
 export const AboutPage = () => {
   return (
@@ -10,35 +13,28 @@ export const AboutPage = () => {
           <div className="2xl:w-[60%] h-full flex flex-col 2xl:py-0 py-[40px]">
             <br />
             <br />
-            <h1 className="title 2xl:text-left text-center">
+            <Title>
               We understand the complexity of digitizing a whole industry
-            </h1>
+            </Title>
             <br />
-            <h4 className="2xl:text-left text-center sub-title">
+            <SubTitle>
               The AEC/O industry works with a wide range of very specific data
               sources that are disconnected by several expert tools. This leads
               to huge inefficiencies and an unsolved complexity at work,
               resulting in a 90% loss of building data during its lifecycle. We
               want to change that with Aidocr.
-            </h4>
+            </SubTitle>
           </div>
 
           <div className="grid 4xl:grid-cols-3 2xl:grid-cols-2 gap-x-4 gap-y-4 my-4">
-            <div className="p-[24px] bg-primary">
-              <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-[2px]">Escalating operational costs</div>
-              <div className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px]">Inefficient, manual processes drive up labor costs, increase error rates, and cause delays of up to 30%. This results in $177b in avoidable losses every year.</div>
-            </div>
-            <div className="p-[24px] bg-primary">
-              <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-[2px]">Missing interoperability of systems and data</div>
-              <div className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px]">Up to 90% of critical data remains buried and disconnected in silos, blocking smart decision-making and potential savings.</div>
-            </div>
-            <div className="p-[24px] bg-primary">
-              <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-[2px]">Compliance & regulatory risks</div>
-              <div className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px]">
-                Complex and hidden data lead to missed deadlines, costly
-                maintenance, and jeopardize Net-Zero, incurring legal penalties.
-              </div>
-            </div>
+            {COMPLEXITIES.map(item => (
+              <Card key={item.title}>
+                <div>
+                  <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-[2px]">Escalating operational costs</div>
+                  <div className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px]">Inefficient, manual processes drive up labor costs, increase error rates, and cause delays of up to 30%. This results in $177b in avoidable losses every year.</div>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </Section>
@@ -50,17 +46,17 @@ export const AboutPage = () => {
       <Section>
         <div className="container flex flex-col">
           <div className="2xl:w-[60%] h-full flex flex-col">
-            <h1 className="title 2xl:text-left text-center 2xl:py-0 py-[40px]">
+            <Title>
               We share a big Vision
-            </h1>
+            </Title>
             <br />
-            <p className="2xl:text-left text-center sub-title">
+            <SubTitle>
               We don't believe in AI replacing millions of jobs, but rather
               improving the way people work in their day-to-day tasks. That's
               why we aim to become the industry standard for building
               intelligence with Aidocr. To enable everyone in the AEC/O industry
               to run more intelligent and efficient operations.
-            </p>
+            </SubTitle>
           </div>
 
           <div className="flex justify-between gap-[50px] 2xl:flex-row flex-col">

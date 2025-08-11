@@ -1,20 +1,22 @@
 import React from 'react';
 import { BUILDING_KNOWLEDGE } from './constants';
 import { Section } from '../../../components/section';
+import { Title } from '../../../components/ui/Title';
+import { SubTitle } from '../../../components/ui/SubTitle';
 
 export const Projects = () => {
   return (
     <Section>
       <div className="container">
         <div className="2xl:w-[60%] 2xl:py-0 py-[40px]">
-          <h1 className="title 2xl:text-left text-center">
+          <Title>
             Chat with BIM, your project- or building knowledge
-          </h1>
+          </Title>
           <br />
-          <h4 className="2xl:text-left text-center sub-title">
+          <SubTitle>
             Aidocr makes every step of your daily work simple and significantly
             faster. Just ask and get reliable and consistent responses.
-          </h4>
+          </SubTitle>
         </div>
         <br />
         <br />

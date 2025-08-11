@@ -6,6 +6,8 @@ import {
   PHONES,
 } from '../../components/layout/footer/constants';
 import { ContactForm } from './components/ContactForm';
+import { Title } from '../../components/ui/Title';
+import { SubTitle } from '../../components/ui/SubTitle';
 
 export const ContactPage = () => {
   const phoneData = [
@@ -40,14 +42,14 @@ export const ContactPage = () => {
         <br />
         <br />
         <div className="2xl:w-[60%] h-full flex flex-col 2xl:py-0 py-[40px]">
-          <h1 className="title 2xl:text-left text-center">
+           <Title>
             Get in touch with us
-          </h1>
-          <p className="2xl:text-left text-center sub-title">
+          </Title>
+          <SubTitle>
             We would love to hear from you! Whether you're interested in a live
             demo or discussing how to implement AI in your company, feel free to
             reach out.
-          </p>
+          </SubTitle>
         </div>
 
         <div className="flex-between 3xl:flex-row flex-col grid 4xl:grid-cols-2 grid-cols-1 gap-[40px]">

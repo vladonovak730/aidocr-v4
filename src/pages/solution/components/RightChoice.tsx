@@ -1,3 +1,4 @@
+import { Title } from '../../../components/ui/Title';
 import { RIGHT_CHOICES } from './constants';
 
 export const RightChoice = () => {
@@ -5,9 +6,9 @@ export const RightChoice = () => {
     <div className="7xl:py-[80px] 5xl:py-[65px] 2xl:py-[50px] py-[40px]">
       <div className="container">
         <div className="2xl:w-[60%] 2xl:py-0 py-[40px]">
-          <h1 className="title 2xl:text-left text-center">
+          <Title>
             Why Aidocr Is the Right Choice
-          </h1>
+          </Title>
           <br />
         </div>
         <div>

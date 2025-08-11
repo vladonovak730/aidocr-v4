@@ -72,7 +72,3 @@ textarea {
 h5 {
   @apply text-[0.83em]
 }
-
-.sub-title {
-  @apply 3xl:text-[24px] text-[18px] 7xl:mt-0 mt-[-15px] 4xl:mb-[40px] mb-4 text-black font-normal
-}
