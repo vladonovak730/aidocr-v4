@@ -1,5 +1,6 @@
 import { WORKFLOW_ITEMS } from "./constants";
 import { Section } from "../../../components/section";
+import { Card } from "../../../components/ui/Card";
 
 export const Workflow = () => {
   return (
@@ -18,12 +19,12 @@ export const Workflow = () => {
           <br />
           <div className="my-4 gap-x-[36px] gap-y-4 items-start justify-start max-w-full grid 4xl:grid-cols-2">
             {WORKFLOW_ITEMS.map((task) => (
-              <div key={task.title} className="flex flex-col 4xl:items-start 4xl:justify-center items-center">
+              <Card key={task.title}>
                 <div>
                   <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-0.5">{task.title}</div>
                   <div className="font-normal 4xl:text-[18px] 3xl:text-[16px] text-[15px]">{task.description}</div>
                 </div>              
-              </div>
+              </Card>
             ))}
           </div>
         </div>

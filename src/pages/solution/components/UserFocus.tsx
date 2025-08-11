@@ -1,3 +1,4 @@
+import { Card } from "../../../components/ui/Card";
 import { USER_TARGETS } from "./constants";
 
 export const UserFocus = () => {
@@ -17,18 +18,18 @@ export const UserFocus = () => {
         </div>
         <div className="flex flex-col gap-[33.6px]">
           {USER_TARGETS.map(item => (
-            <div key={item.title} className="">
+            <div key={item.title}>
               <h5 className="2xl:text-left text-center">{item.title}</h5>
-              <div className="flex 4xl:flex-wrap 4xl:flex-row flex-col flex-nowrap gap-x-[58px] gap-y-4 my-4">
-                <div className="p-[24px] bg-primary basis-[30%]">
+              <div className="grid 4xl:grid-cols-3 2xl:grid-cols-2 gap-x-4 gap-y-4 my-4">
+                <Card className="p-[24px] bg-primary !justify-start">
                   <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-[2px]">Problem</div>
                   <div className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px]">{item.problem}</div>
-                </div>
-                <div className="p-[24px] bg-primary basis-[30%]">
+                </Card>
+                <Card className="p-[24px] bg-primary !justify-start">
                   <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-[2px]">Solution</div>
                   <div className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px]">{item.solution}</div>
-                </div>
-                <div className="p-[24px] bg-primary basis-[30%]">
+                </Card>
+                <Card className="p-[24px] bg-primary !justify-start">
                   <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-[2px]">Benefit</div>
                   <div className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px] pl-[24px]">
                     <ul className="list-disc">
@@ -37,14 +38,11 @@ export const UserFocus = () => {
                       ))}
                     </ul>
                   </div>
-                </div>
-              </div>
-              
+                </Card>
+              </div>              
             </div>
           ))}
-        </div>
-
-        
+        </div>        
       </div>
     </div>
   );

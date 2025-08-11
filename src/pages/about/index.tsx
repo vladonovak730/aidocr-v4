@@ -20,22 +20,22 @@ export const AboutPage = () => {
             </h4>
           </div>
 
-          <div className="flex 4xl:flex-wrap 4xl:flex-row flex-col flex-nowrap gap-x-[58px] gap-y-4 my-4">
-            <div className="p-[24px] bg-primary basis-[30%]">
+          <div className="grid 4xl:grid-cols-3 2xl:grid-cols-2 gap-x-4 gap-y-4 my-4">
+            <div className="p-[24px] bg-primary">
               <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-[2px]">Escalating operational costs</div>
               <div className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px]">Inefficient, manual processes drive up labor costs, increase error rates, and cause delays of up to 30%. This results in $177b in avoidable losses every year.</div>
             </div>
-            <div className="p-[24px] bg-primary basis-[30%]">
+            <div className="p-[24px] bg-primary">
               <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-[2px]">Missing interoperability of systems and data</div>
               <div className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px]">Up to 90% of critical data remains buried and disconnected in silos, blocking smart decision-making and potential savings.</div>
             </div>
-            <div className="p-[24px] bg-primary basis-[30%]">
+            <div className="p-[24px] bg-primary">
               <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-[2px]">Compliance & regulatory risks</div>
               <div className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px]">
                 Complex and hidden data lead to missed deadlines, costly maintenance, and jeopardize Net-Zero, incurring legal penalties.
               </div>
             </div>
-          </div>          
+          </div>
         </div>
       </Section>
 

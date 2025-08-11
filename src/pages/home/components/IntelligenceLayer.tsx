@@ -5,7 +5,7 @@ export const IntelligenceLayer = () => {
     <div className="!pt-[70px]">
       <div className="container">
         <div className="grid 2xl:grid-cols-2 gap-[20px] items-center">
-          <div className="flex flex-col justify-center 2xl:py-0 py-[40px] 2xl:items-start items-center">
+          <div className="flex flex-col justify-center 6xl:py-0 py-[40px] 2xl:items-start items-center">
             <h1 className="title 2xl:text-left text-center">
               The Intelligence Layer for Common Building Data
             </h1>
@@ -16,9 +16,8 @@ export const IntelligenceLayer = () => {
               and more. Work like never before - with Aidocr.
             </p>
             <img src="/assets/static/images/v4/sketchofbuilding.png" alt="Aidocr, intelligence layer for AECO"
-                 className="2xl:hidden block w-1/2 mx-auto"/>
-            {/* <br /> */}
-            <button className="explore-button text-[12px] w-20 bg-white border-none p-0 text-left">
+                 className="2xl:hidden block w-[80%] mx-auto mb-4"/>
+            <button className="explore-button text-[12px] w-20 bg-white border-none p-0 cursor-pointer text-left hover:bg-primary hover:text-title transition-colors duration-300">
               <a href="#explore">
                 Explore
                 <Divider className="!my-[8px]" />
