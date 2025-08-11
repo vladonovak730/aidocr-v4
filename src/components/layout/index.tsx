@@ -1,9 +1,9 @@
-import { useLayoutEffect, type FC, type PropsWithChildren } from "react"
+import { useLayoutEffect } from "react"
+import { useLocation, Outlet } from "react-router-dom";
 import { Footer } from "./footer"
 import { Header } from "./header"
-import { useLocation } from "react-router-dom";
 
-export const Layout: FC<PropsWithChildren> = ({ children }) => {
+export const Layout = () => {
   const { pathname } = useLocation();
 
   useLayoutEffect(() => {
@@ -13,7 +13,7 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <>
       <Header />
-      {children}
+      <Outlet />
       <Footer />
     </>
   );

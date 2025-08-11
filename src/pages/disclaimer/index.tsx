@@ -6,4 +6,4 @@ export const DisclaimerPage = () => {
       title="Privacy Policy"
     />
   );
-}
+};

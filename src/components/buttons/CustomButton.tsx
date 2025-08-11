@@ -1,11 +1,11 @@
-import type { ReactElement } from "react";
-import clsx from "clsx";
+import type { ReactElement } from 'react';
+import clsx from 'clsx';
 
 // TODO: Add button attrs from default
 
 export interface ButtonProps {
   title?: string | ReactElement;
-  type?: "button" | "submit" | "reset";
+  type?: 'button' | 'submit' | 'reset';
   className?: string;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
   disabled?: boolean;
@@ -20,10 +20,9 @@ export const CustomButton: React.FC<ButtonProps> = ({
   children,
   disabled = false,
 }) => {
-
   return (
     <button
-      className={clsx("cursor-pointer", className)}
+      className={clsx('cursor-pointer', className)}
       onClick={(event) => !disabled && onClick && onClick(event)}
       type={type}
       {...(disabled && { disabled })}

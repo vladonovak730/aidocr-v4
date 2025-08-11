@@ -9,11 +9,14 @@ export const UserFocus = () => {
           <br />
           <br />
           <h1 className="title 2xl:text-left text-center">
-            For whom Aidocr <br/> is made for
+            For whom Aidocr <br /> is made for
           </h1>
           <br />
           <h4 className="2xl:text-left text-center sub-title">
-            Whether you’re a planner, general contractor, or facility manager, Aidocr adapts to your role and the relevant task-related data. Aidocr is designed to be flexible and useful for its users from day one, eliminating the need for complex tool training.
+            Whether you’re a planner, general contractor, or facility manager,
+            Aidocr adapts to your role and the relevant task-related data.
+            Aidocr is designed to be flexible and useful for its users from day
+            one, eliminating the need for complex tool training.
           </h4>
         </div>
         <div className="flex flex-col gap-[33.6px]">
@@ -46,4 +49,4 @@ export const UserFocus = () => {
       </div>
     </div>
   );
-}
+};

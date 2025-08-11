@@ -1,4 +1,4 @@
-import { Divider } from "../../../components/ui/Divider.tsx";
+import { Divider } from '../../../components/ui/Divider.tsx';
 
 export const IntelligenceLayer = () => {
   return (
@@ -9,11 +9,12 @@ export const IntelligenceLayer = () => {
             <h1 className="title 2xl:text-left text-center">
               The Intelligence Layer for Common Building Data
             </h1>
-            <br/>
+            <br />
             <p className="2xl:text-left text-center sub-title">
-              Aidocr is the first intelligent Assistant built for the AEC/O industry that understands all specific
-              data sources. Search, act, visualize and automate across and between BIM, documents, plans, databases,
-              and more. Work like never before - with Aidocr.
+              Aidocr is the first intelligent Assistant built for the AEC/O
+              industry that understands all specific data sources. Search, act,
+              visualize and automate across and between BIM, documents, plans,
+              databases, and more. Work like never before - with Aidocr.
             </p>
             <img src="/assets/static/images/v4/sketchofbuilding.png" alt="Aidocr, intelligence layer for AECO"
                  className="2xl:hidden block w-[80%] mx-auto mb-4"/>
@@ -25,11 +26,14 @@ export const IntelligenceLayer = () => {
             </button>
           </div>
           <div>
-            <img src="/assets/static/images/v4/sketchofbuilding.png" alt="Aidocr, intelligence layer for AECO"
-                 className="2xl:block hidden"/>
+            <img
+              src="/assets/static/images/v4/sketchofbuilding.png"
+              alt="Aidocr, intelligence layer for AECO"
+              className="2xl:block hidden"
+            />
           </div>
         </div>
       </div>
     </div>
   );
-}
+};

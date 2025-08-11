@@ -2,7 +2,7 @@ import { TextInput } from "../../../components/forms/TextInput.tsx";
 import { FormWrapper } from "../../../components/forms/FormWrapper.tsx";
 import { contactFormSchema } from "./contants.ts";
 import { TextArea } from "../../../components/forms/TextArea.tsx";
-import { CustomButton } from "../../../components/buttons/CustomBtn.tsx";
+import { CustomButton } from "../../../components/buttons/CustomButton.tsx";
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 

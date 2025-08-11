@@ -7,14 +7,20 @@ export const Workflow = () => {
     <Section id="explore">
       <div className="container">
         <h1 className="text-center">
-          Built for everyone in engineering, construction, and operations of buildings
+          Built for everyone in engineering, construction, and operations of
+          buildings
         </h1>
         <p className="sub-title font-normal 3xl:text-[16px] text-[15px] text-center">
-          Whether you’re developing projects, coordinating construction sites or operating buildings – Aidocr gives you instant access to the knowledge you need to act.
+          Whether you’re developing projects, coordinating construction sites or
+          operating buildings – Aidocr gives you instant access to the knowledge
+          you need to act.
         </p>
         <br />
         <div>
-          <img src="/assets/static/images/v4/aidocr_dashboard.png" alt="Workflow"></img>
+          <img
+            src="/assets/static/images/v4/aidocr_dashboard.png"
+            alt="Workflow"
+          ></img>
           <br />
           <br />
           <div className="my-4 gap-x-[36px] gap-y-4 items-start justify-start max-w-full grid 4xl:grid-cols-2">
@@ -31,4 +37,4 @@ export const Workflow = () => {
       </div>
     </Section>
   );
-}
+};
