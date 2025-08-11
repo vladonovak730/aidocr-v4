@@ -8,7 +8,7 @@ export const Projects = () => {
   return (
     <Section>
       <div className="container">
-        <div className="2xl:w-[60%] 2xl:py-0 py-[40px]">
+        <div className="md:w-[60%] md:py-0 py-[40px]">
           <Title>
             Chat with BIM, your project- or building knowledge
           </Title>
@@ -24,16 +24,16 @@ export const Projects = () => {
           <React.Fragment key={item.title}>
             <div
               key={item.title}
-              className={`flex justify-between gap-[50px] 2xl:flex-row flex-col-reverse ${index % 2 === 0 ? '2xl:flex-row ' : '2xl:!flex-row-reverse '}`}
+              className={`flex justify-between gap-[50px] md:flex-row flex-col-reverse ${index % 2 === 0 ? 'md:flex-row ' : 'md:!flex-row-reverse '}`}
             >
-              <div className="2xl:flex-[0.5] 2xl:w-full xl:w-[70%] xl:mx-auto w-[90%]">
+              <div className="md:flex-[0.5] md:w-full sm:w-[70%] sm:mx-auto w-[90%]">
                 <img src={item.image} alt={item.title} />
               </div>
 
               <div className="workflow-content">
                 <div className="flex flex-col gap-2">
-                  <h5 className="2xl:text-left text-center">{item.title}</h5>
-                  <p className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px] 2xl:text-left text-center">
+                  <h5 className="md:text-left text-center">{item.title}</h5>
+                  <p className="xl:text-[18px] font-normal lg:text-[16px] text-[15px] md:text-left text-center">
                     {item.examples.map((example, ind) => (
                       <React.Fragment key={ind}>
                         <b>{example.question}</b>

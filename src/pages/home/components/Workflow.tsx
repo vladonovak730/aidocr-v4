@@ -25,12 +25,12 @@ export const Workflow = () => {
           ></img>
           <br />
           <br />
-          <div className="my-4 gap-x-[36px] gap-y-4 items-start justify-start max-w-full grid 4xl:grid-cols-2">
+          <div className="my-4 gap-x-[36px] gap-y-4 items-start justify-start max-w-full grid xl:grid-cols-2">
             {WORKFLOW_ITEMS.map((task) => (
               <Card key={task.title} className="!bg-transparent !p-0">
                 <div>
-                  <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-0.5">{task.title}</div>
-                  <div className="font-normal 4xl:text-[18px] 3xl:text-[16px] text-[15px]">{task.description}</div>
+                  <div className="font-bold xl:text-[20px] lg:text-[18px] text-[16px] mb-0.5">{task.title}</div>
+                  <div className="font-normal xl:text-[18px] lg:text-[16px] text-[15px]">{task.description}</div>
                 </div>              
               </Card>
             ))}

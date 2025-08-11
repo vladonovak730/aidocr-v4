@@ -33,13 +33,13 @@ export const Header = () => {
   };
 
   const baseClass = `
-    4xl:ml-[54px] relative inline-block font-normal transition-all duration-300 ease-in-out
-    cursor-pointer 5xl:text-[12px] 4xl:text-[19px] text-[25px] 4xl:text-black text-white
+    xl:ml-[54px] relative inline-block font-normal transition-all duration-300 ease-in-out
+    cursor-pointer 2xl:text-[12px] xl:text-[19px] text-[25px] xl:text-black text-white
     before:content-[''] before:absolute before:w-0 before:h-[2px] lg:h-auto
     before:bottom-[-3px] before:right-0 before:bg-white
     before:transition-all before:duration-300 before:ease-in-out
     hover:before:w-full hover:before:right-auto hover:before:left-0
-    4xl:mb-0 mb-4
+    xl:mb-0 mb-4
     ${
       isMenuOpen
         ? 'after:content-[""] after:absolute after:bottom-[-3px] after:left-0 after:w-full after:h-[2px]'
@@ -62,7 +62,7 @@ export const Header = () => {
               </Link>
               <nav>
                 <ul
-                  className={`4xl:relative flex 4xl:flex-row items-center fixed 4xl:top-auto 4xl:left-auto left-0 top-[70px] 4xl:h-auto overflow-hidden h-0 4xl:w-auto w-full flex-col justify-center transition-all duration-300 4xl:bg-transparent bg-[#122e52] ${isMenuOpen && 'h-[calc(100%-70px)] z-100'}`}
+                  className={`xl:relative flex xl:flex-row items-center fixed xl:top-auto xl:left-auto left-0 top-[70px] xl:h-auto overflow-hidden h-0 xl:w-auto w-full flex-col justify-center transition-all duration-300 xl:bg-transparent bg-[#122e52] ${isMenuOpen && 'h-[calc(100%-70px)] z-100'}`}
                 >
                   {menus.map((menu) => (
                     <li key={menu.label} className={baseClass}>

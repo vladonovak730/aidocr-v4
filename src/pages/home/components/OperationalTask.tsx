@@ -5,9 +5,9 @@ import { SubTitle } from '../../../components/ui/SubTitle';
 
 export const OperationalTask = () => {
   return (
-    <div className="7xl:py-[80px] 5xl:py-[65px] 2xl:py-[50px] py-[40px] bg-blue">
+    <div className="4xl:py-[80px] 2xl:py-[65px] md:py-[50px] py-[40px] bg-blue">
       <div className="container">
-        <div className="2xl:w-[60%] 2xl:py-0 py-[40px]">
+        <div className="md:w-[60%] md:py-0 py-[40px]">
           <Title>
             Aidocr is your personal assistant for operational task
           </Title>
@@ -20,18 +20,18 @@ export const OperationalTask = () => {
           </SubTitle>
         </div>
 
-        <div className="my-4 gap-x-[36px] gap-y-4 grid 4xl:grid-cols-2 items-start justify-start max-w-full">
+        <div className="my-4 gap-x-[36px] gap-y-4 grid xl:grid-cols-2 items-start justify-start max-w-full">
           {OPERATION_TASKS.map((task) => (
             <div
               key={task.title}
-              className="flex flex-col 4xl:items-start 4xl:justify-center items-center"
+              className="flex flex-col xl:items-start xl:justify-center items-center"
             >
               <div>
                 <Divider />
-                <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-0.5">
+                <div className="font-bold xl:text-[20px] lg:text-[18px] text-[16px] mb-0.5">
                   {task.title}
                 </div>
-                <div className="font-normal 4xl:text-[18px] 3xl:text-[16px] text-[15px]">
+                <div className="font-normal xl:text-[18px] lg:text-[16px] text-[15px]">
                   {task.description}
                 </div>
               </div>

@@ -13,7 +13,7 @@ export const HamburgerButton: FC<IHamburgerButtonProps> = ({
   return (
     <button
       className={clsx(
-        'flex 4xl:hidden flex-col absolute top-1/2 right-0 w-[28px] h-[28px] bg-transparent border-0 p-0 cursor-pointer transition-transform duration-250 ease-in-out',
+        'flex xl:hidden flex-col absolute top-1/2 right-0 w-[28px] h-[28px] bg-transparent border-0 p-0 cursor-pointer transition-transform duration-250 ease-in-out',
         isActive && 'is-active',
       )}
       aria-label="Menu"

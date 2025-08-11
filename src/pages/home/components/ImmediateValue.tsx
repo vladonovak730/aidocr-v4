@@ -8,7 +8,7 @@ export const ImmediateValue = () => {
   return (
     <Section>
       <div className="container">
-        <div className="2xl:w-[60%] 2xl:py-0 py-[40px]">
+        <div className="md:w-[60%] md:py-0 py-[40px]">
           <Title>
             Immediate value simply by working with Aidocr
           </Title>
@@ -21,20 +21,20 @@ export const ImmediateValue = () => {
           </SubTitle>
         </div>
         <br />
-        <div className="my-4 gap-x-[36px] gap-y-4 grid 4xl:grid-cols-2 items-start justify-start max-w-full">
+        <div className="my-4 gap-x-[36px] gap-y-4 grid xl:grid-cols-2 items-start justify-start max-w-full">
           {IMMEDIATE_VALUES.map((item) => (
             <Card
               key={item.value}
               className="!bg-transparent !p-0"
             >
               <div className="w-full">
-                <h3 className="font-bold leading-[1.11] text-left 7xl:text-[45px] 6xl:text-[42px] 4xl:text-[38px] 3xl:text-[32px] text-[26px] 7xl:mb-[50px] 3xl:mb-4 mb-[20px]">
+                <h3 className="font-bold leading-[1.11] text-left 4xl:text-[45px] 3xl:text-[42px] xl:text-[38px] lg:text-[32px] text-[26px] 4xl:mb-[50px] lg:mb-4 mb-[20px]">
                   {item.value}
                 </h3>
-                <p className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-0.5">
+                <p className="font-bold xl:text-[20px] lg:text-[18px] text-[16px] mb-0.5">
                   {item.title}
                 </p>
-                <p className="font-normal 4xl:text-[18px] 3xl:text-[16px] text-[15px]">
+                <p className="font-normal xl:text-[18px] lg:text-[16px] text-[15px]">
                   {item.description}
                 </p>
               </div>

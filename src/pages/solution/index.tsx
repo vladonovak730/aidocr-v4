@@ -11,7 +11,7 @@ export const SolutionPage = () => {
     <>
       <Section>
         <div className="container">
-          <div className="2xl:w-[60%] 2xl:py-0 py-[40px]">
+          <div className="md:w-[60%] md:py-0 py-[40px]">
             <br />
             <br />
             <Title>

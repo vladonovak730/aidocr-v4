@@ -11,7 +11,7 @@ export const Section: FC<ISectionProps> = ({ children, className, id }) => {
     <div
       id={id}
       className={clsx(
-        '7xl:py-[80px] 5xl:py-[65px] 2xl:py-[50px] py-[40px]',
+        '4xl:py-[80px] 2xl:py-[65px] md:py-[50px] py-[40px]',
         className,
       )}
     >

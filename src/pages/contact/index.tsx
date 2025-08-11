@@ -41,7 +41,7 @@ export const ContactPage = () => {
       <div className="container">
         <br />
         <br />
-        <div className="2xl:w-[60%] h-full flex flex-col 2xl:py-0 py-[40px]">
+        <div className="md:w-[60%] h-full flex flex-col md:py-0 py-[40px]">
            <Title>
             Get in touch with us
           </Title>
@@ -52,8 +52,8 @@ export const ContactPage = () => {
           </SubTitle>
         </div>
 
-        <div className="flex-between 3xl:flex-row flex-col grid 4xl:grid-cols-2 grid-cols-1 gap-[40px]">
-          <div className="grid xl:grid-cols-2 grid-cols-1 gap-[17px]">
+        <div className="flex-between lg:flex-row flex-col grid xl:grid-cols-2 grid-cols-1 gap-[40px]">
+          <div className="grid sm:grid-cols-2 grid-cols-1 gap-[17px]">
             <ContactCard
               image="/assets/static/images/place.svg"
               title="ADDRESS"

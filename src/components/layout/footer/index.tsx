@@ -16,25 +16,25 @@ export const Footer = () => {
 
   return (
     <footer className="text-white bg-blue-light">
-      <div className="5xl:text-[17px] text-[15px]  2xl:pt-[40px] 2xl:pb-[95px] py-[80px]">
+      <div className="2xl:text-[17px] text-[15px]  md:pt-[40px] md:pb-[95px] py-[80px]">
         <div className="container">
           <div
-            className="flex flex-start 4xl:flex-nowrap flex-wrap 2xl:flex-row 2xl:justify-between  gap-[40px] 2xl:flex-wrap 2xl:gap-[40px] flex-col justify-center text-center">
+            className="flex flex-start xl:flex-nowrap flex-wrap md:flex-row md:justify-between  gap-[40px] md:flex-wrap md:gap-[40px] flex-col justify-center text-center">
             <Link
               className="font-aidocr text-[37px] hover:text-hover transition-all duration-300 ease-in-out leading-[1.21] h-fit"
               to="/">
               aidocr
             </Link>
             <div>
-              <div className="font-bold mb-2 !text-white 5xl:text-[17px] text-[15px]">Made by Aidocr AG</div>
+              <div className="font-bold mb-2 !text-white 2xl:text-[17px] text-[15px]">Made by Aidocr AG</div>
               <ul>
-                {MADE_BY_ADDRESSES.map((address, index) => <li key={index} className="mb-2 flex flex-col 2xl:items-start items-center">{address}</li>)}
+                {MADE_BY_ADDRESSES.map((address, index) => <li key={index} className="mb-2 flex flex-col md:items-start items-center">{address}</li>)}
               </ul>
             </div>
 
-            <div className="flex flex-col 2xl:items-start items-center">
-              <div className="font-bold mb-2 !text-white 5xl:text-[17px] text-[15px]">Phone:</div>
-              <ul className="flex flex-col 2xl:items-start items-center">
+            <div className="flex flex-col md:items-start items-center">
+              <div className="font-bold mb-2 !text-white 2xl:text-[17px] text-[15px]">Phone:</div>
+              <ul className="flex flex-col md:items-start items-center">
                 {PHONES.map(phone => (
                   <li key={phone.number} className="mb-2">
                     <a
@@ -47,8 +47,8 @@ export const Footer = () => {
                   </li>
                 ))}
 
-                <li className="mb-2 flex flex-col 2xl:items-start items-center">
-                  <div className="font-bold mb-2 !text-white 5xl:text-[17px] text-[15px]">Email:</div>
+                <li className="mb-2 flex flex-col md:items-start items-center">
+                  <div className="font-bold mb-2 !text-white 2xl:text-[17px] text-[15px]">Email:</div>
                   <a
                     className="hover:underline"
                     property="email"
@@ -60,9 +60,9 @@ export const Footer = () => {
               </ul>
             </div>
 
-            <div className="flex flex-col 2xl:items-start items-center">
-              <div className="font-bold mb-2 !text-white 5xl:text-[17px] text-[15px]">Useful links:</div>
-              <ul className="flex flex-col 2xl:items-start items-center">
+            <div className="flex flex-col md:items-start items-center">
+              <div className="font-bold mb-2 !text-white 2xl:text-[17px] text-[15px]">Useful links:</div>
+              <ul className="flex flex-col md:items-start items-center">
                 {USEFUL_LINKS.map((item, index) => (
                   <li key={index} className="mb-2">
                     <Link className="hover:underline" to={item.link} target={item.target}>
@@ -77,7 +77,7 @@ export const Footer = () => {
       </div>
 
       <div
-        className="text-base bg-blue-dark py-[16px] 2xl:text-[16px] 2xl:leading-[1.11] text-[14px] leading-[1.7] 2xl:text-left text-center">
+        className="text-base bg-blue-dark py-[16px] md:text-[16px] md:leading-[1.11] text-[14px] leading-[1.7] md:text-left text-center">
         <div className="container">
           © Copyright by Aidocr AG, Switzerland. All Rights Reserved
         </div>

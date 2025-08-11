@@ -6,8 +6,8 @@ export const IntelligenceLayer = () => {
   return (
     <div className="!pt-[70px]">
       <div className="container">
-        <div className="grid 2xl:grid-cols-2 gap-[20px] items-center">
-          <div className="flex flex-col justify-center 6xl:py-0 py-[40px] 2xl:items-start items-center">
+        <div className="grid md:grid-cols-2 gap-[20px] items-center">
+          <div className="flex flex-col justify-center 3xl:py-0 py-[40px] md:items-start items-center">
             <Title>
               The Intelligence Layer for Common Building Data
             </Title>
@@ -19,7 +19,7 @@ export const IntelligenceLayer = () => {
               databases, and more. Work like never before - with Aidocr.
             </SubTitle>
             <img src="/assets/static/images/v4/sketchofbuilding.png" alt="Aidocr, intelligence layer for AECO"
-                 className="2xl:hidden block w-[80%] mx-auto mb-4"/>
+                 className="md:hidden block w-[80%] mx-auto mb-4"/>
             <button className="explore-button text-[12px] w-20 bg-white border-none p-0 cursor-pointer text-left hover:bg-primary hover:text-title transition-colors duration-300">
               <a href="#explore">
                 Explore
@@ -31,7 +31,7 @@ export const IntelligenceLayer = () => {
             <img
               src="/assets/static/images/v4/sketchofbuilding.png"
               alt="Aidocr, intelligence layer for AECO"
-              className="2xl:block hidden"
+              className="md:block hidden"
             />
           </div>
         </div>

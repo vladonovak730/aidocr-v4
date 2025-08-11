@@ -10,7 +10,7 @@ export const AboutPage = () => {
     <>
       <Section>
         <div className="container flex flex-col">
-          <div className="2xl:w-[60%] h-full flex flex-col 2xl:py-0 py-[40px]">
+          <div className="md:w-[60%] h-full flex flex-col md:py-0 py-[40px]">
             <br />
             <br />
             <Title>
@@ -26,12 +26,12 @@ export const AboutPage = () => {
             </SubTitle>
           </div>
 
-          <div className="grid 4xl:grid-cols-3 2xl:grid-cols-2 gap-x-4 gap-y-4 my-4">
+          <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-x-4 gap-y-4 my-4">
             {COMPLEXITIES.map(item => (
               <Card key={item.title}>
                 <div>
-                  <div className="font-bold 4xl:text-[20px] 3xl:text-[18px] text-[16px] mb-[2px]">Escalating operational costs</div>
-                  <div className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px]">Inefficient, manual processes drive up labor costs, increase error rates, and cause delays of up to 30%. This results in $177b in avoidable losses every year.</div>
+                  <div className="font-bold xl:text-[20px] lg:text-[18px] text-[16px] mb-[2px]">Escalating operational costs</div>
+                  <div className="xl:text-[18px] font-normal lg:text-[16px] text-[15px]">Inefficient, manual processes drive up labor costs, increase error rates, and cause delays of up to 30%. This results in $177b in avoidable losses every year.</div>
                 </div>
               </Card>
             ))}
@@ -45,7 +45,7 @@ export const AboutPage = () => {
 
       <Section>
         <div className="container flex flex-col">
-          <div className="2xl:w-[60%] h-full flex flex-col">
+          <div className="md:w-[60%] h-full flex flex-col">
             <Title>
               We share a big Vision
             </Title>
@@ -59,19 +59,19 @@ export const AboutPage = () => {
             </SubTitle>
           </div>
 
-          <div className="flex justify-between gap-[50px] 2xl:flex-row flex-col">
-            <div className="2xl:flex-[0.5] 2xl:w-full xl:w-[70%] xl:mx-auto w-[90%]">
+          <div className="flex justify-between gap-[50px] md:flex-row flex-col">
+            <div className="md:flex-[0.5] md:w-full sm:w-[70%] sm:mx-auto w-[90%]">
               <img
                 src="/assets/static/images/v4/escalator.png"
                 alt="workflow"
               />
             </div>
-            <div className="workflow-content flex flex-col 2xl:gap-[33.6px]">
+            <div className="workflow-content flex flex-col md:gap-[33.6px]">
               {VERSION_OPTIONS.map((item) => (
                 <div key={item.title} className="flex flex-col gap-2">
                   <Divider />
-                  <h5 className="2xl:text-left text-center">{item.title}</h5>
-                  <p className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px] 2xl:text-left text-center">
+                  <h5 className="md:text-left text-center">{item.title}</h5>
+                  <p className="xl:text-[18px] font-normal lg:text-[16px] text-[15px] md:text-left text-center">
                     {item.description}
                   </p>
                 </div>
