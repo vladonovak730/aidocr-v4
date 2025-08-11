@@ -1,4 +1,4 @@
-import { RIGHT_CHOICES } from "./constants";
+import { RIGHT_CHOICES } from './constants';
 
 export const RightChoice = () => {
   return (
@@ -13,10 +13,13 @@ export const RightChoice = () => {
         <div>
           <div className="flex justify-between gap-[50px] 2xl:flex-row flex-col">
             <div className="2xl:flex-[0.5] 2xl:w-full xl:w-[70%] xl:mx-auto w-[90%]">
-              <img src="/assets/static/images/v4/escalator2.png" alt="workflow" />
+              <img
+                src="/assets/static/images/v4/escalator2.png"
+                alt="workflow"
+              />
             </div>
             <div className="workflow-content flex flex-col gap-[33.6px]">
-              {RIGHT_CHOICES.map(item => (
+              {RIGHT_CHOICES.map((item) => (
                 <div key={item.title} className="flex flex-col gap-2">
                   <h5 className="2xl:text-left text-center">{item.title}</h5>
                   <p className="4xl:text-[18px] font-normal 3xl:text-[16px] text-[15px] 2xl:text-left text-center">
@@ -24,10 +27,10 @@ export const RightChoice = () => {
                   </p>
                 </div>
               ))}
-            </div>            
+            </div>
           </div>
-        </div>        
+        </div>
       </div>
     </div>
   );
-}
+};

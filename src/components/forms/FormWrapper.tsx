@@ -1,4 +1,4 @@
-import { type FormEventHandler, type PropsWithChildren } from "react";
+import { type FormEventHandler, type PropsWithChildren } from 'react';
 
 interface Props extends PropsWithChildren {
   onSubmit?: FormEventHandler<HTMLFormElement>;
