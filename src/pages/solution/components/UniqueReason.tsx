@@ -7,9 +7,7 @@ export const UniqueReason = () => {
     <div className="4xl:py-[80px] 2xl:py-[65px] md:py-[50px] py-[40px]">
       <div className="container">
         <div className="md:w-[60%] md:py-0 py-[40px]">
-          <Title>
-            What makes us unique
-          </Title>
+          <Title>What makes us unique</Title>
           <br />
           <SubTitle>
             Aidocr offers a very unique set of features that go beyond just

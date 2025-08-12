@@ -42,9 +42,7 @@ export const ContactPage = () => {
         <br />
         <br />
         <div className="md:w-[60%] h-full flex flex-col md:py-0 py-[40px]">
-           <Title>
-            Get in touch with us
-          </Title>
+          <Title>Get in touch with us</Title>
           <SubTitle>
             We would love to hear from you! Whether you're interested in a live
             demo or discussing how to implement AI in your company, feel free to

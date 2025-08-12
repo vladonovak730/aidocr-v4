@@ -32,4 +32,4 @@ export const COMPLEXITIES = [
     description:
       'Complex and hidden data lead to missed deadlines, costly maintenance, and jeopardize Net-Zero, incurring legal penalties.',
   },
-]
+];

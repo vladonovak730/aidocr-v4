@@ -1,11 +1,8 @@
-import type {ClipboardEventHandler, CSSProperties, DragEventHandler} from "react";
-
-export interface IContactForm {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
+import type {
+  ClipboardEventHandler,
+  CSSProperties,
+  DragEventHandler,
+} from 'react';
 
 export interface InputInterface {
   name: string;

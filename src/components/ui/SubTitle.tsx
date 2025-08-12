@@ -1,4 +1,4 @@
-import type { FC, PropsWithChildren } from "react";
+import type { FC, PropsWithChildren } from 'react';
 
 export const SubTitle: FC<PropsWithChildren> = ({ children }) => {
   return (
@@ -6,4 +6,4 @@ export const SubTitle: FC<PropsWithChildren> = ({ children }) => {
       {children}
     </h4>
   );
-}
+};

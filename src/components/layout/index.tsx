@@ -1,7 +1,7 @@
-import { useLayoutEffect } from "react"
-import { useLocation, Outlet } from "react-router-dom";
-import { Footer } from "./footer"
-import { Header } from "./header"
+import { useLayoutEffect } from 'react';
+import { useLocation, Outlet } from 'react-router-dom';
+import { Footer } from './footer';
+import { Header } from './header';
 
 export const Layout = () => {
   const { pathname } = useLocation();
@@ -17,4 +17,4 @@ export const Layout = () => {
       <Footer />
     </>
   );
-}
+};

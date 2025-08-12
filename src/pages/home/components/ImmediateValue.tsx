@@ -9,9 +9,7 @@ export const ImmediateValue = () => {
     <Section>
       <div className="container">
         <div className="md:w-[60%] md:py-0 py-[40px]">
-          <Title>
-            Immediate value simply by working with Aidocr
-          </Title>
+          <Title>Immediate value simply by working with Aidocr</Title>
           <br />
           <SubTitle>
             Stop searching – start finding. Aidocr easily connects to your
@@ -23,10 +21,7 @@ export const ImmediateValue = () => {
         <br />
         <div className="my-4 gap-x-[36px] gap-y-4 grid xl:grid-cols-2 items-start justify-start max-w-full">
           {IMMEDIATE_VALUES.map((item) => (
-            <Card
-              key={item.value}
-              className="!bg-transparent !p-0"
-            >
+            <Card key={item.value} className="!bg-transparent !p-0">
               <div className="w-full">
                 <h3 className="font-bold leading-[1.11] text-left 4xl:text-[45px] 3xl:text-[42px] xl:text-[38px] lg:text-[32px] text-[26px] 4xl:mb-[50px] lg:mb-4 mb-[20px]">
                   {item.value}

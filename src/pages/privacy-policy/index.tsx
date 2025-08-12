@@ -6,4 +6,4 @@ export const PrivacyPolicy = () => {
       title="Privacy Policy"
     />
   );
-}
+};

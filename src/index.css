@@ -1,25 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
-@import "tailwindcss";
-@import "./styles/font.css";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import 'tailwindcss';
+@import './styles/font.css';
 
 @theme {
   --font-comfortaa: Comfortaa, sans-serif;
   --font-aidocr: Aidocr, sans-serif;
 
-  --color-primary: #F6F8FE;
+  --color-primary: #f6f8fe;
   --color-blue-light: #4e7cbf;
   --color-blue-dark: #122e52;
   --color-blue: #e4efff;
   --color-hover: #007bff;
   --color-title: #525a98;
-  --color-divider: #E7B667;
+  --color-divider: #e7b667;
 
   --leading-h1: 1.11;
 
   --text-2xl: 2.3125rem;
   --text-3xl: 2.625rem;
 
-  --shadow-header: 0 7px 11px rgba(0,0,0,.1);
+  --shadow-header: 0 7px 11px rgba(0, 0, 0, 0.1);
 
   --breakpoint-xs: 23.4375rem; /* 375px */
   --breakpoint-sm: 425px; /* 425px */
@@ -33,27 +33,32 @@
 }
 
 :root {
-  @apply font-comfortaa text-[30px]
+  @apply font-comfortaa text-[30px];
 }
 
 .container {
-  @apply max-w-164 w-full mx-auto px-4
+  @apply max-w-164 w-full mx-auto px-4;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  @apply mt-0 mb-[8px] text-title
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply mt-0 mb-[8px] text-title;
 }
 
 h1 {
-  @apply 5xl:mb-[49px] 5xl:text-[55px] 4xl:text-[55px] 4xl:mb-8.75 xl:text-[38px] lg:text-[32px] md:text-[30px] md:mb-7.5 mb-5 text-[26px] leading-h1 
+  @apply 5xl:mb-[49px] 5xl:text-[55px] 4xl:text-[55px] 4xl:mb-8.75 xl:text-[38px] lg:text-[32px] md:text-[30px] md:mb-7.5 mb-5 text-[26px] leading-h1;
 }
 
 .description {
-  @apply font-normal leading-[1.67] xl:mt-[-15px] xl:mb-[40px] text-[17px] mb-7.5
+  @apply font-normal leading-[1.67] xl:mt-[-15px] xl:mb-[40px] text-[17px] mb-7.5;
 }
 
 .workflow-content {
-  @apply flex-[0.5]
+  @apply flex-[0.5];
 }
 
 /* .text {
@@ -61,14 +66,14 @@ h1 {
 } */
 
 .title {
-  @apply leading-[1.11] 4xl:text-[55px] 4xl:mb-[50px] 3xl:text-[42px] xl:text-[38px] lg:text-[32px] lg:mb-[42px] xs:text-[30px] xs:mb-4 text-[26px] mb-[20px]
+  @apply leading-[1.11] 4xl:text-[55px] 4xl:mb-[50px] 3xl:text-[42px] xl:text-[38px] lg:text-[32px] lg:mb-[42px] xs:text-[30px] xs:mb-4 text-[26px] mb-[20px];
 }
 
 input,
 textarea {
-  @apply outline-none
+  @apply outline-none;
 }
 
 h5 {
-  @apply text-[0.83em]
+  @apply text-[0.83em];
 }

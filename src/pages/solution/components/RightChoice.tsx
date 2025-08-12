@@ -6,9 +6,7 @@ export const RightChoice = () => {
     <div className="4xl:py-[80px] 2xl:py-[65px] md:py-[50px] py-[40px]">
       <div className="container">
         <div className="md:w-[60%] md:py-0 py-[40px]">
-          <Title>
-            Why Aidocr Is the Right Choice
-          </Title>
+          <Title>Why Aidocr Is the Right Choice</Title>
           <br />
         </div>
         <div>

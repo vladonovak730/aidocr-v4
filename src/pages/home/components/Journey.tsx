@@ -7,9 +7,7 @@ export const Journey = () => {
   return (
     <Section>
       <div className="container">
-        <Title className="!text-center">
-          Your Journey to testdrive aidocr
-        </Title>
+        <Title className="!text-center">Your Journey to testdrive aidocr</Title>
         <br />
         <div className="my-4 gap-x-[36px] gap-y-4 grid md:grid-cols-2 items-start justify-start max-w-full">
           {JOURNEY.map((item, index) => (

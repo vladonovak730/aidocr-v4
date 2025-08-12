@@ -8,9 +8,7 @@ export const OperationalTask = () => {
     <div className="4xl:py-[80px] 2xl:py-[65px] md:py-[50px] py-[40px] bg-blue">
       <div className="container">
         <div className="md:w-[60%] md:py-0 py-[40px]">
-          <Title>
-            Aidocr is your personal assistant for operational task
-          </Title>
+          <Title>Aidocr is your personal assistant for operational task</Title>
           <br />
           <SubTitle>
             Stop searching – start finding. Aidocr easily connects to your

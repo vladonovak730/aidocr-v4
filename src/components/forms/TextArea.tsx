@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import type {ChangeEventHandler, FC, FocusEventHandler, ReactNode} from 'react';
 import clsx from 'clsx';
 import type {
   InputExternalHandlers,
@@ -10,10 +10,10 @@ interface Props extends InputInterface, InputExternalHandlers {
   className?: string;
   readOnly?: boolean;
   clearable?: boolean;
-  onChange?: (event: any) => void;
+  onChange?: ChangeEventHandler;
   onClear?: () => void;
-  onBlur?: (event: any) => void;
-  customComponent?: any;
+  onBlur?: FocusEventHandler;
+  customComponent?: ReactNode;
 }
 
 export const TextArea: FC<Props> = ({

@@ -1,8 +1,8 @@
-import { WORKFLOW_ITEMS } from "./constants";
-import { Section } from "../../../components/section";
-import { Card } from "../../../components/ui/Card";
-import { SubTitle } from "../../../components/ui/SubTitle";
-import { Title } from "../../../components/ui/Title";
+import { WORKFLOW_ITEMS } from './constants';
+import { Section } from '../../../components/section';
+import { Card } from '../../../components/ui/Card';
+import { SubTitle } from '../../../components/ui/SubTitle';
+import { Title } from '../../../components/ui/Title';
 
 export const Workflow = () => {
   return (
@@ -29,9 +29,13 @@ export const Workflow = () => {
             {WORKFLOW_ITEMS.map((task) => (
               <Card key={task.title} className="!bg-transparent !p-0">
                 <div>
-                  <div className="font-bold xl:text-[20px] lg:text-[18px] text-[16px] mb-0.5">{task.title}</div>
-                  <div className="font-normal xl:text-[18px] lg:text-[16px] text-[15px]">{task.description}</div>
-                </div>              
+                  <div className="font-bold xl:text-[20px] lg:text-[18px] text-[16px] mb-0.5">
+                    {task.title}
+                  </div>
+                  <div className="font-normal xl:text-[18px] lg:text-[16px] text-[15px]">
+                    {task.description}
+                  </div>
+                </div>
               </Card>
             ))}
           </div>

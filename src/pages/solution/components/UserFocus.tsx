@@ -1,7 +1,7 @@
-import { Card } from "../../../components/ui/Card";
-import { SubTitle } from "../../../components/ui/SubTitle";
-import { Title } from "../../../components/ui/Title";
-import { USER_TARGETS } from "./constants";
+import { Card } from '../../../components/ui/Card';
+import { SubTitle } from '../../../components/ui/SubTitle';
+import { Title } from '../../../components/ui/Title';
+import { USER_TARGETS } from './constants';
 
 export const UserFocus = () => {
   return (
@@ -22,25 +22,35 @@ export const UserFocus = () => {
           </SubTitle>
         </div>
         <div className="flex flex-col gap-[33.6px]">
-          {USER_TARGETS.map(item => (
+          {USER_TARGETS.map((item) => (
             <div key={item.title}>
               <h5 className="md:text-left text-center">{item.title}</h5>
               <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-x-4 gap-y-4 my-4">
                 <Card>
                   <div>
-                    <div className="font-bold xl:text-[20px] lg:text-[18px] text-[16px] mb-[2px]">Problem</div>
-                    <div className="xl:text-[18px] font-normal lg:text-[16px] text-[15px]">{item.problem}</div>
-                  </div>                  
-                </Card>
-                <Card>
-                  <div>
-                    <div className="font-bold xl:text-[20px] lg:text-[18px] text-[16px] mb-[2px]">Solution</div>
-                    <div className="xl:text-[18px] font-normal lg:text-[16px] text-[15px]">{item.solution}</div>
+                    <div className="font-bold xl:text-[20px] lg:text-[18px] text-[16px] mb-[2px]">
+                      Problem
+                    </div>
+                    <div className="xl:text-[18px] font-normal lg:text-[16px] text-[15px]">
+                      {item.problem}
+                    </div>
                   </div>
                 </Card>
                 <Card>
                   <div>
-                    <div className="font-bold xl:text-[20px] lg:text-[18px] text-[16px] mb-[2px]">Benefit</div>
+                    <div className="font-bold xl:text-[20px] lg:text-[18px] text-[16px] mb-[2px]">
+                      Solution
+                    </div>
+                    <div className="xl:text-[18px] font-normal lg:text-[16px] text-[15px]">
+                      {item.solution}
+                    </div>
+                  </div>
+                </Card>
+                <Card>
+                  <div>
+                    <div className="font-bold xl:text-[20px] lg:text-[18px] text-[16px] mb-[2px]">
+                      Benefit
+                    </div>
                     <div className="xl:text-[18px] font-normal lg:text-[16px] text-[15px] pl-[24px]">
                       <ul className="list-disc">
                         {item.benefit.map((ben, ind) => (
@@ -48,12 +58,12 @@ export const UserFocus = () => {
                         ))}
                       </ul>
                     </div>
-                  </div>                  
+                  </div>
                 </Card>
-              </div>              
+              </div>
             </div>
           ))}
-        </div>        
+        </div>
       </div>
     </div>
   );

@@ -27,11 +27,17 @@ export const AboutPage = () => {
           </div>
 
           <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-x-4 gap-y-4 my-4">
-            {COMPLEXITIES.map(item => (
+            {COMPLEXITIES.map((item) => (
               <Card key={item.title}>
                 <div>
-                  <div className="font-bold xl:text-[20px] lg:text-[18px] text-[16px] mb-[2px]">Escalating operational costs</div>
-                  <div className="xl:text-[18px] font-normal lg:text-[16px] text-[15px]">Inefficient, manual processes drive up labor costs, increase error rates, and cause delays of up to 30%. This results in $177b in avoidable losses every year.</div>
+                  <div className="font-bold xl:text-[20px] lg:text-[18px] text-[16px] mb-[2px]">
+                    Escalating operational costs
+                  </div>
+                  <div className="xl:text-[18px] font-normal lg:text-[16px] text-[15px]">
+                    Inefficient, manual processes drive up labor costs, increase
+                    error rates, and cause delays of up to 30%. This results in
+                    $177b in avoidable losses every year.
+                  </div>
                 </div>
               </Card>
             ))}
@@ -46,9 +52,7 @@ export const AboutPage = () => {
       <Section>
         <div className="container flex flex-col">
           <div className="md:w-[60%] h-full flex flex-col">
-            <Title>
-              We share a big Vision
-            </Title>
+            <Title>We share a big Vision</Title>
             <br />
             <SubTitle>
               We don't believe in AI replacing millions of jobs, but rather

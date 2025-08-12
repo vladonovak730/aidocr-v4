@@ -9,9 +9,7 @@ export const Projects = () => {
     <Section>
       <div className="container">
         <div className="md:w-[60%] md:py-0 py-[40px]">
-          <Title>
-            Chat with BIM, your project- or building knowledge
-          </Title>
+          <Title>Chat with BIM, your project- or building knowledge</Title>
           <br />
           <SubTitle>
             Aidocr makes every step of your daily work simple and significantly
