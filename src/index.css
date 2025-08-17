@@ -54,10 +54,6 @@ h6 {
   @apply flex-[0.5];
 }
 
-/* .text {
-  @apply xl:text-[18px] font-normal lg:text-[16px] text-[15px]
-} */
-
 .title {
   @apply leading-[1.11] 4xl:text-[55px] 4xl:mb-[50px] 3xl:text-[42px] xl:text-[38px] lg:text-[32px] lg:mb-[42px] xs:text-[30px] xs:mb-4 text-[26px] mb-[20px];
 }
