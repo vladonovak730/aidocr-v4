@@ -11,13 +11,10 @@ export const SolutionPage = () => {
     <>
       <Section>
         <div className="container">
-          <div className="md:w-[60%] md:py-0 py-[40px]">
-            <br />
-            <br />
+          <div className="md:w-[60%] pt-16 flex flex-col gap-8">
             <Title>
               What Aidocr <br /> Can Do for You
             </Title>
-            <br />
             <SubTitle>
               Aidocr works like an intelligent assistant for all operational
               tasks across all data sources. Aidocr makes you smarter and

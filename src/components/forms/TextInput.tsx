@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import type { ChangeEventHandler, FC, FocusEventHandler } from 'react';
 import clsx from 'clsx';
 import type {
   InputExternalHandlers,
@@ -10,10 +10,9 @@ interface Props extends InputInterface, InputExternalHandlers {
   showErrorText?: boolean;
   readOnly?: boolean;
   clearable?: boolean;
-  onChange?: (event: any) => void;
+  onChange?: ChangeEventHandler;
   onClear?: () => void;
-  onBlur?: (event: any) => void;
-  customComponent?: any;
+  onBlur?: FocusEventHandler;
 }
 
 export const TextInput: FC<Props> = ({
@@ -37,7 +36,7 @@ export const TextInput: FC<Props> = ({
         {...(onBlur && { onBlur })}
         value={value}
         className={clsx(
-          'border-transparent focus:border-black rounded-0 border-[1px] focus:outline-[1px] py-2 px-[25px] !bg-white w-full transition-all duration-300 ease-in-out font-light text-black text-[15px] placeholder-black outline-none',
+          'border-transparent focus:border-black rounded-0 border focus:outline py-4 px-6 !bg-white w-full transition-all duration-300 ease-in-out font-light text-black text-[15px] placeholder-black outline-none',
           error && 'focus:!border-red-500',
           value && !error && 'focus:!border-green-800',
         )}

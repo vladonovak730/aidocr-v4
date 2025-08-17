@@ -16,9 +16,6 @@
 
   --leading-h1: 1.11;
 
-  --text-2xl: 2.3125rem;
-  --text-3xl: 2.625rem;
-
   --shadow-header: 0 7px 11px rgba(0, 0, 0, 0.1);
 
   --breakpoint-xs: 23.4375rem; /* 375px */
@@ -33,11 +30,11 @@
 }
 
 :root {
-  @apply font-comfortaa text-[30px];
+  @apply font-comfortaa;
 }
 
 .container {
-  @apply max-w-164 w-full mx-auto px-4;
+  @apply max-w-307.5 w-full mx-auto px-7.5;
 }
 
 h1,
@@ -46,11 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply mt-0 mb-[8px] text-title;
-}
-
-h1 {
-  @apply 5xl:mb-[49px] 5xl:text-[55px] 4xl:text-[55px] 4xl:mb-8.75 xl:text-[38px] lg:text-[32px] md:text-[30px] md:mb-7.5 mb-5 text-[26px] leading-h1;
+  @apply text-title;
 }
 
 .description {
@@ -75,5 +68,5 @@ textarea {
 }
 
 h5 {
-  @apply text-[0.83em];
+  @apply text-[25px] font-bold;
 }

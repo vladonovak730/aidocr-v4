@@ -8,11 +8,9 @@ import { Divider } from '../../components/ui/Divider';
 
 export const HomePage = () => {
   return (
-    <>
+    <div>
       <IntelligenceLayer />
       <OperationalTask />
-      <br />
-      <br />
       <Workflow />
       <div className="container">
         <Divider />
@@ -26,6 +24,6 @@ export const HomePage = () => {
         <Divider />
       </div>
       <Journey />
-    </>
+    </div>
   );
 };

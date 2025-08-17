@@ -39,9 +39,8 @@ export const ContactPage = () => {
   return (
     <Section className="bg-blue">
       <div className="container">
-        <br />
-        <br />
-        <div className="md:w-[60%] h-full flex flex-col md:py-0 py-[40px]">
+
+        <div className="md:w-[60%] h-full flex flex-col pt-16">
           <Title>Get in touch with us</Title>
           <SubTitle>
             We would love to hear from you! Whether you're interested in a live
@@ -50,8 +49,8 @@ export const ContactPage = () => {
           </SubTitle>
         </div>
 
-        <div className="flex-between lg:flex-row flex-col grid xl:grid-cols-2 grid-cols-1 gap-[40px]">
-          <div className="grid sm:grid-cols-2 grid-cols-1 gap-[17px]">
+        <div className="flex-between lg:flex-row flex-col grid xl:grid-cols-2 grid-cols-1 gap-10">
+          <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
             <ContactCard
               image="/assets/static/images/place.svg"
               title="ADDRESS"

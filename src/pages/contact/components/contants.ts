@@ -6,3 +6,10 @@ export const contactFormSchema = yup.object().shape({
   subject: yup.string().required('Subject is required'),
   message: yup.string().required('Message is required'),
 });
+
+export type Contact = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}

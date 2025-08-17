@@ -9,7 +9,7 @@ export const Card: FC<ICardProps> = ({ children, className }) => {
   return (
     <div
       className={clsx(
-        'flex items-start justify-center p-[24px] bg-primary',
+        'flex items-start justify-center p-6 bg-primary',
         className,
       )}
     >

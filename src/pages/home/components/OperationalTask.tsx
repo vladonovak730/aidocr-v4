@@ -5,11 +5,10 @@ import { SubTitle } from '../../../components/ui/SubTitle';
 
 export const OperationalTask = () => {
   return (
-    <div className="4xl:py-[80px] 2xl:py-[65px] md:py-[50px] py-[40px] bg-blue">
+    <div className="4xl:py-20 2xl:py-16 md:py-12.5 py-10 bg-blue">
       <div className="container">
-        <div className="md:w-[60%] md:py-0 py-[40px]">
+        <div className="md:w-[60%] pt-16 flex flex-col gap-8">
           <Title>Aidocr is your personal assistant for operational task</Title>
-          <br />
           <SubTitle>
             Stop searching – start finding. Aidocr easily connects to your
             systems and makes your data truly accessible. From technical plans
@@ -18,7 +17,7 @@ export const OperationalTask = () => {
           </SubTitle>
         </div>
 
-        <div className="my-4 gap-x-[36px] gap-y-4 grid xl:grid-cols-2 items-start justify-start max-w-full">
+        <div className="my-7.5 gap-x-9 gap-y-7.5 grid xl:grid-cols-2 items-start justify-start max-w-full">
           {OPERATION_TASKS.map((task) => (
             <div
               key={task.title}
@@ -26,10 +25,10 @@ export const OperationalTask = () => {
             >
               <div>
                 <Divider />
-                <div className="font-bold xl:text-[20px] lg:text-[18px] text-[16px] mb-0.5">
+                <div className="font-bold xl:text-xl lg:text-lg text-base mb-0.5">
                   {task.title}
                 </div>
-                <div className="font-normal xl:text-[18px] lg:text-[16px] text-[15px]">
+                <div className="font-normal xl:text-lg lg:text-base text-[15px]">
                   {task.description}
                 </div>
               </div>

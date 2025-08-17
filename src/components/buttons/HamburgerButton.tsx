@@ -13,29 +13,29 @@ export const HamburgerButton: FC<IHamburgerButtonProps> = ({
   return (
     <button
       className={clsx(
-        'flex xl:hidden flex-col absolute top-1/2 right-0 w-[28px] h-[28px] bg-transparent border-0 p-0 cursor-pointer transition-transform duration-250 ease-in-out',
+        'flex xl:hidden flex-col absolute top-1/2 right-0 w-7 h-7 bg-transparent border-0 p-0 cursor-pointer transition-transform duration-250 ease-in-out',
         isActive && 'is-active',
       )}
       aria-label="Menu"
       onClick={onClick}
     >
       <span
-        className={`block w-[28px] h-[3px] rounded bg-black origin-center transition-transform duration-250 ease-in-out ${
-          isActive ? 'transform translate-y-0 rotate-45' : 'translate-y-[-6px]'
+        className={`block w-7 h-0.75 rounded bg-black origin-center transition-transform duration-250 ease-in-out ${
+          isActive ? 'transform translate-y-0 rotate-45' : '-translate-y-1.5'
         }`}
       ></span>
       <span
         className={clsx(
-          'block w-[28px] h-[3px] rounded bg-black origin-center transition-transform duration-250 ease-in-out',
+          'block w-7 h-0.75 rounded bg-black origin-center transition-transform duration-250 ease-in-out',
           isActive && 'hidden',
         )}
       ></span>
       <span
         className={clsx(
-          'block w-[28px] h-[3px] rounded bg-black origin-center transition-transform duration-250 ease-in-out',
+          'block w-7 h-0.75 rounded bg-black origin-center transition-transform duration-250 ease-in-out',
           isActive
-            ? 'transform -translate-y-[3px] -rotate-45'
-            : 'translate-y-[6px]',
+            ? 'transform -translate-y-0.75 -rotate-45'
+            : 'translate-y-1.5',
         )}
       ></span>
     </button>

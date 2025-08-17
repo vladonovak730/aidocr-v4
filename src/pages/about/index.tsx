@@ -10,13 +10,10 @@ export const AboutPage = () => {
     <>
       <Section>
         <div className="container flex flex-col">
-          <div className="md:w-[60%] h-full flex flex-col md:py-0 py-[40px]">
-            <br />
-            <br />
+          <div className="md:w-[60%] h-full flex flex-col pt-16 gap-8">
             <Title>
               We understand the complexity of digitizing a whole industry
             </Title>
-            <br />
             <SubTitle>
               The AEC/O industry works with a wide range of very specific data
               sources that are disconnected by several expert tools. This leads
@@ -26,14 +23,14 @@ export const AboutPage = () => {
             </SubTitle>
           </div>
 
-          <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-x-4 gap-y-4 my-4">
+          <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-x-7.5 gap-y-7.5 my-7.5">
             {COMPLEXITIES.map((item) => (
               <Card key={item.title}>
                 <div>
-                  <div className="font-bold xl:text-[20px] lg:text-[18px] text-[16px] mb-[2px]">
+                  <div className="font-bold xl:text-xl lg:text-lg text-base mb-0.5">
                     Escalating operational costs
                   </div>
-                  <div className="xl:text-[18px] font-normal lg:text-[16px] text-[15px]">
+                  <div className="xl:text-lg font-normal lg:text-base text-[15px]">
                     Inefficient, manual processes drive up labor costs, increase
                     error rates, and cause delays of up to 30%. This results in
                     $177b in avoidable losses every year.
@@ -51,9 +48,8 @@ export const AboutPage = () => {
 
       <Section>
         <div className="container flex flex-col">
-          <div className="md:w-[60%] h-full flex flex-col">
+          <div className="md:w-[60%] h-full flex flex-col gap-8">
             <Title>We share a big Vision</Title>
-            <br />
             <SubTitle>
               We don't believe in AI replacing millions of jobs, but rather
               improving the way people work in their day-to-day tasks. That's
@@ -63,19 +59,19 @@ export const AboutPage = () => {
             </SubTitle>
           </div>
 
-          <div className="flex justify-between gap-[50px] md:flex-row flex-col">
+          <div className="flex justify-between gap-12.5 md:flex-row flex-col">
             <div className="md:flex-[0.5] md:w-full sm:w-[70%] sm:mx-auto w-[90%]">
               <img
                 src="/assets/static/images/v4/escalator.png"
                 alt="workflow"
               />
             </div>
-            <div className="workflow-content flex flex-col md:gap-[33.6px]">
+            <div className="workflow-content flex flex-col md:gap-8">
               {VERSION_OPTIONS.map((item) => (
-                <div key={item.title} className="flex flex-col gap-2">
+                <div key={item.title} className="flex flex-col gap-4">
                   <Divider />
-                  <h5 className="md:text-left text-center">{item.title}</h5>
-                  <p className="xl:text-[18px] font-normal lg:text-[16px] text-[15px] md:text-left text-center">
+                  <h5 className="md:text-left text-center mb-2">{item.title}</h5>
+                  <p className="xl:text-lg font-normal lg:text-base text-[15px] md:text-left text-center">
                     {item.description}
                   </p>
                 </div>
