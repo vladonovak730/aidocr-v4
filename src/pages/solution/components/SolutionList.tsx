@@ -18,7 +18,7 @@ export const SolutionsList = () => {
                   <img src={item.image} alt="workflow" />
                 </div>
                 <div className="workflow-content">
-                  <div className="flex flex-col gap-4">
+                  <div className="flex flex-col gap-4 pb-4">
                     <p className="text-title mb-4 text-2xl font-bold md:text-left text-center">
                       {item.title}
                     </p>
