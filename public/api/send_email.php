@@ -4,12 +4,57 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST');
 header('Access-Control-Allow-Headers: Content-Type');
 
+// reCAPTCHA configuration
+// IMPORTANT: Replace this with your actual reCAPTCHA secret key
+// You can get this from https://www.google.com/recaptcha/admin
+$recaptcha_secret = '6Lf51qsrAAAAAFbE7tbQtDJMunDo0Jj7SMGa37dQ'; // Replace with your secret key
+$recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['submit'])) {
         $name = $_POST['name'] ?? '';
         $email = $_POST['email'] ?? '';
         $subject = $_POST['subject'] ?? '';
         $message = $_POST['message'] ?? '';
+        $recaptcha_response = $_POST['g-recaptcha-response'] ?? '';
+        
+        // Validate reCAPTCHA
+        if (empty($recaptcha_response)) {
+            http_response_code(400);
+            echo json_encode([
+                'success' => false,
+                'message' => 'Please complete the reCAPTCHA verification'
+            ]);
+            exit;
+        }
+        
+        // Verify reCAPTCHA with Google
+        $recaptcha_data = [
+            'secret' => $recaptcha_secret,
+            'response' => $recaptcha_response,
+            'remoteip' => $_SERVER['REMOTE_ADDR'] ?? ''
+        ];
+        
+        $recaptcha_options = [
+            'http' => [
+                'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+                'method' => 'POST',
+                'content' => http_build_query($recaptcha_data)
+            ]
+        ];
+        
+        $recaptcha_context = stream_context_create($recaptcha_options);
+        $recaptcha_result = file_get_contents($recaptcha_url, false, $recaptcha_context);
+        $recaptcha_json = json_decode($recaptcha_result, true);
+        
+        if (!$recaptcha_json['success']) {
+            http_response_code(400);
+            echo json_encode([
+                'success' => false,
+                'message' => 'reCAPTCHA verification failed. Please try again.'
+            ]);
+            exit;
+        }
         
         // Validate required fields
         if (empty($name) || empty($email) || empty($subject) || empty($message)) {
