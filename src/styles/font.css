@@ -6,3 +6,57 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 300;
+  src: url("/public/assets/fonts/Comfortaa-Light.woff2") format("woff2")
+}
+@font-face {
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/public/assets/fonts/Comfortaa-Regular.ttf") format("woff2")
+}
+@font-face {
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/public/assets/fonts/Сomfortaa-Medium.woff2") format("woff2")
+}
+@font-face {
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 600;
+  src: url("/public/assets/fonts/Comfortaa-SemiBold.woff2") format("woff2")
+}
+@font-face {
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 700;
+  src: url("/public/assets/fonts/Comfortaa-Bold.woff2") format("woff2")
+}
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/public/assets/fonts/Poppins-Regular.woff2") format("woff2")
+}
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  src: url("/public/assets/fonts/Poppins-SemiBold.woff2") format("woff2")
+}
+@font-face {
+  font-family: Aidocr;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/public/assets/fonts/aidocr.otf") format("woff2")
+}
+@font-face {
+  font-family: AidocrBold;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/public/assets/fonts/aidocr-Bold.otf") format("woff2")
+}

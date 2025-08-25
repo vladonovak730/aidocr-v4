@@ -33,7 +33,7 @@ export const Footer = () => {
                 {MADE_BY_ADDRESSES.map((address, index) => (
                   <li
                     key={index}
-                    className="mb-4 flex flex-col md:items-start items-center"
+                    className="mb-4 flex flex-col md:items-start items-center font-[300]"
                   >
                     {address}
                   </li>
@@ -47,7 +47,7 @@ export const Footer = () => {
               </div>
               <ul className="flex flex-col md:items-start items-center">
                 {PHONES.map((phone) => (
-                  <li key={phone.number} className="mb-4">
+                  <li key={phone.number} className="mb-4 font-[300]">
                     <a
                       className="hover:underline"
                       property="telephone"
@@ -63,7 +63,7 @@ export const Footer = () => {
                     Email:
                   </div>
                   <a
-                    className="hover:underline"
+                    className="hover:underline font-[300]"
                     property="email"
                     href="mailto:info@aidocr.com"
                   >
@@ -81,7 +81,7 @@ export const Footer = () => {
                 {USEFUL_LINKS.map((item, index) => (
                   <li key={index} className="mb-4">
                     <Link
-                      className="hover:underline"
+                      className="hover:underline font-[300]"
                       to={item.link}
                       target={item.target}
                     >
