@@ -12,20 +12,16 @@ import { CustomButton } from '../../../components/buttons/CustomButton';
 
 export const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<
-    'idle' | 'success' | 'error'
-  >('idle');
   const [captchaError, setCaptchaError] = useState<string>('');
 
-  // Get the site key
-  const siteKey = import.meta.env.VITE_SITE_KEY || '6Lf51qsrAAAAABqd3qsMOgjExi9NTeAJyWc_NDEY';
-  
+  // const siteKey = import.meta.env.VITE_SITE_KEY || '6Lf51qsrAAAAABqd3qsMOgjExi9NTeAJyWc_NDEY';
+  const siteKey = import.meta.env.VITE_SITE_KEY;
+
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
-    reset,
   } = useForm({
     resolver: yupResolver(contactFormSchema),
   });
@@ -45,8 +41,6 @@ export const ContactForm = () => {
     }
 
     setIsSubmitting(true);
-    setSubmitStatus('idle');
-
     try {
       const formData = new FormData();
       formData.append('name', data.name);
@@ -56,31 +50,18 @@ export const ContactForm = () => {
       formData.append('g-recaptcha-response', captchaValue); // Add reCAPTCHA response
       formData.append('submit', 'true');
 
-      const response = await fetch('/api/send_email.php', {
+      await fetch(`${import.meta.env.VITE_BASE_URL}/send_email.php`, {
         method: 'POST',
-        body: formData,
-      });
-
-      const result = await response.json();
-
-      if (response.ok && result.success) {
-        setSubmitStatus('success');
-        reset();
-        // Reset reCAPTCHA
-        recaptchaRef.current?.reset();
-        setTimeout(() => {
-          window.location.href = '/';
-        }, 2000);
-      } else {
-        setSubmitStatus('error');
-        console.error('Server error:', result.message);
-        // Reset reCAPTCHA on error
-        recaptchaRef.current?.reset();
-      }
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: 'test', email: 'test@email.com', subject: 'Hello', message: 'Test' })
+      })
+      .then(res => res.json())
+      .then(data => console.log(data))
+      .catch(err => console.error(err));
+      
+      recaptchaRef.current?.reset();
     } catch (error) {
       console.error('Error submitting form:', error);
-      setSubmitStatus('error');
-      // Reset reCAPTCHA on error
       recaptchaRef.current?.reset();
     } finally {
       setIsSubmitting(false);
@@ -95,21 +76,6 @@ export const ContactForm = () => {
 
   return (
     <div>
-      {submitStatus === 'success' && (
-        <div className="mb-7.5 p-4 bg-green-100 border border-green-400 text-green-700 rounded text-base">
-          <p>
-            Thanks for your message! We will get back to you shortly. You will
-            be redirected to the main page in 2 seconds.
-          </p>
-        </div>
-      )}
-
-      {submitStatus === 'error' && (
-        <div className="mb-7.5 p-4 bg-red-100 border border-red-400 text-red-700 rounded text-base">
-          <p>Failed to send email - Please try again.</p>
-        </div>
-      )}
-
       <FormWrapper
         className="gap-6 flex flex-col"
         onSubmit={handleSubmit(onSubmit)}
