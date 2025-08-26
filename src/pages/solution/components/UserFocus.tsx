@@ -1,4 +1,3 @@
-import { Card } from '../../../components/ui/Card';
 import { SubTitle } from '../../../components/ui/SubTitle';
 import { Title } from '../../../components/ui/Title';
 import { USER_TARGETS } from './constants';
