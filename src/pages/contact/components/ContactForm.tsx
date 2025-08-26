@@ -8,19 +8,18 @@ import { type Contact, contactFormSchema } from './contants';
 import { TextArea } from '../../../components/forms/TextArea';
 import { CustomButton } from '../../../components/buttons/CustomButton';
 
-
-
 export const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [captchaError, setCaptchaError] = useState<string>('');
+  const [, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  // const siteKey = import.meta.env.VITE_SITE_KEY || '6Lf51qsrAAAAABqd3qsMOgjExi9NTeAJyWc_NDEY';
   const siteKey = import.meta.env.VITE_SITE_KEY;
 
   const {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(contactFormSchema),
@@ -30,8 +29,9 @@ export const ContactForm = () => {
   const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   const onSubmit = async (data: Contact) => {
-    // Clear previous captcha error
+    // Clear previous errors
     setCaptchaError('');
+    setSubmitStatus('idle');
     
     // Check if reCAPTCHA is completed
     const captchaValue = recaptchaRef.current?.getValue();
@@ -41,28 +41,45 @@ export const ContactForm = () => {
     }
 
     setIsSubmitting(true);
+    
     try {
+      // Create form data
       const formData = new FormData();
       formData.append('name', data.name);
       formData.append('email', data.email);
       formData.append('subject', data.subject);
       formData.append('message', data.message);
-      formData.append('g-recaptcha-response', captchaValue); // Add reCAPTCHA response
+      formData.append('g-recaptcha-response', captchaValue);
       formData.append('submit', 'true');
-
-      await fetch(`${import.meta.env.VITE_BASE_URL}/send_email.php`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: 'test', email: 'test@email.com', subject: 'Hello', message: 'Test' })
-      })
-      .then(res => res.json())
-      .then(data => console.log(data))
-      .catch(err => console.error(err));
       
-      recaptchaRef.current?.reset();
+      // Debug: Log the form data being sent
+      console.log('Submitting form with data:', {
+        name: data.name,
+        email: data.email,
+        subject: data.subject,
+        message: data.message,
+        recaptcha: captchaValue ? 'COMPLETED' : 'NOT_COMPLETED'
+      });
+      
+      // Submit to PHP endpoint
+      const response = await fetch('/send_email.php', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const responseData = await response.json();
+      console.log('PHP Response:', responseData);
+
+      if (response.ok && responseData.success) {
+        setSubmitStatus('success');
+        reset(); // Reset form
+        recaptchaRef.current?.reset(); // Reset reCAPTCHA
+      } else {
+        setSubmitStatus('error');
+      }
     } catch (error) {
       console.error('Error submitting form:', error);
-      recaptchaRef.current?.reset();
+      setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
     }
