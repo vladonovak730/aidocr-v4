@@ -19,12 +19,16 @@ export const Footer = () => {
       <div className="2xl:text-[17px] text-[15px]  md:pt-10 md:pb-27 py-20">
         <div className="container">
           <div className="flex flex-start xl:flex-nowrap flex-wrap md:flex-row md:justify-between  gap-10 md:flex-wrap md:gap-10 flex-col justify-center text-center">
-            <Link
-              className="font-aidocr text-4xl transition-all duration-300 ease-in-out leading-[1.21] h-fit"
-              to="/"
-            >
-              aidocr
-            </Link>
+            <div>
+              <Link
+                className="font-aidocr text-4xl transition-all duration-300 ease-in-out leading-[1.21] h-fit"
+                to="/"
+              >
+                aidocr
+              </Link>
+              <img className='w-70 mt-7.5 mx-auto' src="/assets/static/images/building-smart-logo.png" alt="building-smart-logo" />
+            </div>
+           
             <div>
               <div className="font-bold mb-4 !text-white 2xl:text-[17px] text-[15px]">
                 Made by Aidocr AG
