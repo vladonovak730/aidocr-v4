@@ -20,7 +20,7 @@ export const Footer = () => {
         <div className="container">
           <div className="flex flex-start xl:flex-nowrap flex-wrap md:flex-row md:justify-between  gap-10 md:flex-wrap md:gap-10 flex-col justify-center text-center">
             <Link
-              className="font-aidocr text-4xl hover:text-hover transition-all duration-300 ease-in-out leading-[1.21] h-fit"
+              className="font-aidocr text-4xl transition-all duration-300 ease-in-out leading-[1.21] h-fit"
               to="/"
             >
               aidocr
