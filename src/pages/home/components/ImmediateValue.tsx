@@ -7,7 +7,7 @@ import { SubTitle } from '../../../components/ui/SubTitle';
 export const ImmediateValue = () => {
   return (
     <Section>
-      <div className="container flex flex-col gap-8">
+      <div className="container flex flex-col gap-7.5">
         <div className="md:w-[60%] md:py-0 py-10 flex flex-col gap-8">
           <Title>Immediate value simply by working with Aidocr</Title>
           <SubTitle>
@@ -17,7 +17,7 @@ export const ImmediateValue = () => {
             unified chat-interface.
           </SubTitle>
         </div>
-        <div className="my-7.5 gap-x-9 gap-y-7.5 grid xl:grid-cols-2 items-start justify-start max-w-full">
+        <div className="mt-7.5 gap-x-9 gap-y-7.5 grid xl:grid-cols-2 items-start justify-start max-w-full">
           {IMMEDIATE_VALUES.map((item) => (
             <Card key={item.value} className="!bg-transparent !p-0">
               <div className="w-full">

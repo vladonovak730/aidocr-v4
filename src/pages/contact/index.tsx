@@ -49,7 +49,7 @@ export const ContactPage = () => {
           </SubTitle>
         </div>
 
-        <div className="flex-between lg:flex-row flex-col grid xl:grid-cols-2 grid-cols-1 gap-10">
+        <div className="flex-between lg:flex-row flex-col grid xl:grid-cols-2 grid-cols-1 gap-10 mt-7.5">
           <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
             <ContactCard
               image="/assets/static/images/place.svg"

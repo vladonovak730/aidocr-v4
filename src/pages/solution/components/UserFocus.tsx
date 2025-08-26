@@ -19,7 +19,7 @@ export const UserFocus = () => {
             one, eliminating the need for complex tool training.
           </SubTitle>
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 mt-7.5">
           {USER_TARGETS.map((item) => (
             <div key={item.title}>
               <h5 className="md:text-left text-center mb-2">{item.title}</h5>

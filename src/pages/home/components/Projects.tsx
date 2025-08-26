@@ -7,7 +7,7 @@ import { SubTitle } from '../../../components/ui/SubTitle';
 export const Projects = () => {
   return (
     <Section>
-      <div className="container flex flex-col gap-8">
+      <div className="container flex flex-col gap-7.5">
         <div className="md:w-[60%] md:py-0 py-10 flex flex-col gap-8">
           <Title>Chat with BIM, your project- or building knowledge</Title>
           <SubTitle>

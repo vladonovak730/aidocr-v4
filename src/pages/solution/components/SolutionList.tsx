@@ -14,12 +14,12 @@ export const SolutionsList = () => {
                 key={item.title}
                 className="flex justify-between gap-12.5 md:flex-row flex-col py-4"
               >
-                <div className="md:flex-[0.5] md:w-full sm:w-[70%] sm:mx-auto w-[90%]">
+                <div className="md:flex-[0.5] md:w-full sm:w-[70%] mx-auto w-[90%]">
                   <img src={item.image} alt="workflow" />
                 </div>
                 <div className="workflow-content">
                   <div className="flex flex-col gap-4">
-                    <p className="text-title mb-4 text-2xl font-bold md:text-left text-center">
+                    <p className="text-title mb-2 text-2xl font-bold md:text-left text-center">
                       {item.title}
                     </p>
                     <p className="xl:text-lg font-normal lg:text-base text-[15px] md:text-left text-center">

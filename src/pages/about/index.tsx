@@ -23,7 +23,7 @@ export const AboutPage = () => {
             </SubTitle>
           </div>
 
-          <div className="grid xl:grid-cols-3 gap-x-7.5 gap-y-7.5 my-7.5">
+          <div className="grid xl:grid-cols-3 gap-x-7.5 gap-y-7.5 mt-7.5">
             {COMPLEXITIES.map((item) => (
               <ResponsiveCard key={item.title} title={item.title} description={item.description} />                
             ))}
@@ -48,14 +48,14 @@ export const AboutPage = () => {
             </SubTitle>
           </div>
 
-          <div className="flex justify-between gap-12.5 md:flex-row flex-col">
-            <div className="md:flex-[0.5] md:w-full sm:w-[70%] sm:mx-auto w-[90%]">
+          <div className="flex justify-between gap-12.5 md:flex-row flex-col mt-7.5">
+            <div className="md:flex-[0.5] md:w-full sm:w-[70%] mx-auto w-[90%]">
               <img
                 src="/assets/static/images/v4/escalator.png"
                 alt="workflow"
               />
             </div>
-            <div className="workflow-content flex flex-col md:gap-8">
+            <div className="workflow-content flex flex-col gap-4">
               {VERSION_OPTIONS.map((item) => (
                 <div key={item.title} className="flex flex-col gap-4">
                   <Divider />

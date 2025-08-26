@@ -19,7 +19,7 @@ export const Workflow = () => {
             you need to act.
           </SubTitle>
         </div>
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-16 mt-7.5">
           <img
             src="/assets/static/images/v4/aidocr_dashboard.png"
             alt="Workflow"
@@ -28,10 +28,10 @@ export const Workflow = () => {
             {WORKFLOW_ITEMS.map((task) => (
               <Card key={task.title} className="!bg-transparent !p-0">
                 <div>
-                  <div className="text-title font-bold xl:text-xl lg:text-lg text-base mb-1">
+                  <div className="text-title font-bold xl:text-xl lg:text-lg text-base mb-1 md:text-left text-center">
                     {task.title}
                   </div>
-                  <div className="font-normal xl:text-lg lg:text-base text-[15px]">
+                  <div className="font-normal xl:text-lg lg:text-base text-[15px] md:text-left text-center">
                     {task.description}
                   </div>
                 </div>

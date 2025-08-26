@@ -18,7 +18,7 @@ export const Journey = () => {
                 <h3 className="font-bold leading-[1.11] text-left 4xl:text-[45px] 3xl:text-[42px] xl:text-[38px] lg:text-[32px] text-[26px] 4xl:!mb-[50px] lg:!mb-7.5 !mb-5">
                   {index + 1}.
                 </h3>
-                <div className="font-bold xl:text-xl lg:text-lg text-base mb-0.5">
+                <div className="font-bold xl:text-xl lg:text-lg text-base mb-1">
                   {item.title}
                 </div>
                 <div className="font-normal xl:text-lg lg:text-base text-[15px]">
@@ -28,7 +28,7 @@ export const Journey = () => {
             </Card>
           ))}
         </div>
-        <div className="md:flex-[0.5] md:w-full sm:w-[70%] sm:mx-auto w-[90%] pt-8">
+        <div className="md:flex-[0.5] md:w-full sm:w-[70%] mx-auto w-[90%] pt-8">
           <img src="/assets/static/images/v4/team2.png" alt="Workflow" />
         </div>
       </div>

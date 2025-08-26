@@ -14,7 +14,7 @@ export const UniqueReason = () => {
             battle-tested, and grown by the demands of our clients.
           </SubTitle>
         </div>
-        <div>
+        <div className="mt-7.5">
           <div className="flex justify-between gap-12.5 md:flex-row flex-col">
             <div className="workflow-content flex flex-col gap-8">
               {UNIQUE_REASONS.map((item) => (
@@ -26,7 +26,7 @@ export const UniqueReason = () => {
                 </div>
               ))}
             </div>
-            <div className="md:flex-[0.5] md:w-full sm:w-[70%] sm:mx-auto w-[90%]">
+            <div className="md:flex-[0.5] md:w-full sm:w-[70%] mx-auto w-[90%]">
               <img src="/assets/static/images/v4/thinking.png" alt="workflow" />
             </div>
           </div>

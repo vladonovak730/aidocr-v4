@@ -10,7 +10,7 @@ export const RightChoice = () => {
         </div>
         <div>
           <div className="flex justify-between gap-12.5 md:flex-row flex-col">
-            <div className="md:flex-[0.5] md:w-full sm:w-[70%] sm:mx-auto w-[90%]">
+            <div className="md:flex-[0.5] md:w-full sm:w-[70%] mx-auto w-[90%]">
               <img
                 src="/assets/static/images/v4/escalator2.png"
                 alt="workflow"
@@ -18,7 +18,7 @@ export const RightChoice = () => {
             </div>
             <div className="workflow-content flex flex-col gap-8">
               {RIGHT_CHOICES.map((item) => (
-                <div key={item.title} className="flex flex-col gap-2">
+                <div key={item.title} className="flex flex-col gap-4">
                   <h5 className="md:text-left text-center mb-2">{item.title}</h5>
                   <p className="xl:text-lg font-normal lg:text-base text-[15px] md:text-left text-center">
                     {item.description}

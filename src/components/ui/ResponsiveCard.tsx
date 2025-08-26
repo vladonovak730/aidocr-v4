@@ -16,7 +16,7 @@ export const ResponsiveCard: FC<IResponsiveCardProps> = ({ title, description, c
       )}
     >
       <div>
-        <div className="font-bold xl:text-xl lg:text-lg text-base mb-0.5">
+        <div className="font-bold xl:text-xl lg:text-lg text-base mb-1">
           {title}
         </div>
         <div className="xl:text-lg font-normal lg:text-base text-[15px]">
