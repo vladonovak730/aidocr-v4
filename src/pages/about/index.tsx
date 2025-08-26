@@ -23,7 +23,7 @@ export const AboutPage = () => {
             </SubTitle>
           </div>
 
-          <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-x-7.5 gap-y-7.5 my-7.5">
+          <div className="grid xl:grid-cols-3 gap-x-7.5 gap-y-7.5 my-7.5">
             {COMPLEXITIES.map((item) => (
               <Card key={item.title}>
                 <div>

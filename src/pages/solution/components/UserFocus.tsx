@@ -23,7 +23,7 @@ export const UserFocus = () => {
           {USER_TARGETS.map((item) => (
             <div key={item.title}>
               <h5 className="md:text-left text-center mb-2">{item.title}</h5>
-              <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-x-7.5 gap-y-7.5 my-7.5">
+              <div className="grid xl:grid-cols-3 gap-x-7.5 gap-y-7.5 my-7.5">
                 <Card>
                   <div>
                     <div className="font-bold xl:text-xl lg:text-lg text-base mb-0.5">

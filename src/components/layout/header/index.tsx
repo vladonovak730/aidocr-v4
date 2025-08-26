@@ -34,7 +34,7 @@ export const Header = () => {
 
   const baseClass = `
     xl:ml-13.5 relative inline-block font-normal transition-all duration-300 ease-in-out
-    cursor-pointer 2xl:text-[12px] xl:text-[19px] text-[25px] xl:text-black text-white
+    cursor-pointer xl:text-[19px] text-[25px] xl:text-black text-white
     before:content-[''] before:absolute before:w-0 before:h-0.5 lg:h-auto
     before:bottom-[-3px] before:right-0 before:bg-white
     before:transition-all before:duration-300 before:ease-in-out
