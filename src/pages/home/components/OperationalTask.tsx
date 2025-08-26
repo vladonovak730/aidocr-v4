@@ -21,14 +21,14 @@ export const OperationalTask = () => {
           {OPERATION_TASKS.map((task) => (
             <div
               key={task.title}
-              className="flex flex-col xl:items-start xl:justify-center items-center"
+              className="flex flex-col xl:items-start xl:justify-center items-center "
             >
               <div>
-                <Divider />
-                <div className="font-bold xl:text-xl lg:text-lg text-base mb-0.5">
+                <Divider className='xl:mb-4 mb-11.5' />
+                <div className="font-bold xl:text-xl lg:text-lg text-base mb-0.5 md:text-left text-center">
                   {task.title}
                 </div>
-                <div className="font-normal xl:text-lg lg:text-base text-[15px]">
+                <div className="font-normal xl:text-lg lg:text-base text-[15px] ">
                   {task.description}
                 </div>
               </div>

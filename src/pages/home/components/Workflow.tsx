@@ -7,16 +7,18 @@ import { Title } from '../../../components/ui/Title';
 export const Workflow = () => {
   return (
     <Section id="explore">
-      <div className="container flex flex-col pt-16">
-        <Title className="!text-center">
-          Built for everyone in engineering, construction, and operations of
-          buildings
-        </Title>
-        <SubTitle className="!text-center">
-          Whether you’re developing projects, coordinating construction sites or
-          operating buildings – Aidocr gives you instant access to the knowledge
-          you need to act.
-        </SubTitle>
+      <div className="container flex flex-col">
+        <div className="pt-16 flex flex-col gap-8">
+          <Title className="!text-center">
+            Built for everyone in engineering, construction, and operations of
+            buildings
+          </Title>
+          <SubTitle className="!text-center">
+            Whether you’re developing projects, coordinating construction sites or
+            operating buildings – Aidocr gives you instant access to the knowledge
+            you need to act.
+          </SubTitle>
+        </div>
         <div className="flex flex-col gap-16">
           <img
             src="/assets/static/images/v4/aidocr_dashboard.png"
@@ -26,7 +28,7 @@ export const Workflow = () => {
             {WORKFLOW_ITEMS.map((task) => (
               <Card key={task.title} className="!bg-transparent !p-0">
                 <div>
-                  <div className="font-bold xl:text-xl lg:text-lg text-base mb-1">
+                  <div className="text-title font-bold xl:text-xl lg:text-lg text-base mb-1">
                     {task.title}
                   </div>
                   <div className="font-normal xl:text-lg lg:text-base text-[15px]">

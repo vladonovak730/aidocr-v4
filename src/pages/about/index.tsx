@@ -1,7 +1,6 @@
 import { Section } from '../../components/section';
 import { COMPLEXITIES, VERSION_OPTIONS } from './constants';
 import { Divider } from '../../components/ui/Divider';
-import { Card } from '../../components/ui/Card';
 import { Title } from '../../components/ui/Title';
 import { SubTitle } from '../../components/ui/SubTitle';
 import { ResponsiveCard } from '../../components/ui/ResponsiveCard';
@@ -10,7 +9,7 @@ export const AboutPage = () => {
   return (
     <>
       <Section>
-        <div className="container flex flex-col">
+        <div className="container flex flex-col 4xl:pt-20 2xl:pt-16 md:pt-12.5 pt-10">
           <div className="md:w-[60%] h-full flex flex-col pt-16 gap-8">
             <Title>
               We understand the complexity of digitizing a whole industry

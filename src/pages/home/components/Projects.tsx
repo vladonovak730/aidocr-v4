@@ -22,16 +22,16 @@ export const Projects = () => {
                 key={item.title}
                 className={`flex justify-between gap-12.5 md:flex-row flex-col-reverse ${index % 2 === 0 ? 'md:flex-row ' : 'md:!flex-row-reverse '}`}
               >
-                <div className="md:flex-[0.5] md:w-full sm:w-[70%] sm:mx-auto w-[90%]">
+                <div className="md:flex-[0.5] md:w-full sm:w-[70%] mx-auto w-[90%]">
                   <img src={item.image} alt={item.title} />
                 </div>
 
                 <div className="workflow-content">
                   <div className="flex flex-col gap-4">
-                    <h5 className="md:text-left text-center mb-2">{item.title}</h5>
+                    <h5 className="mb-2">{item.title}</h5>
                     <div className="flex flex-col gap-8">
                       {item.examples.map((example, ind) => (
-                        <p key={ind} className="xl:text-lg font-normal lg:text-base text-[15px] md:text-left text-center">
+                        <p key={ind} className="xl:text-lg font-normal lg:text-base text-[15px]">
                           <b>{example.question}</b>
                           <br />
                           Answer: {example.answer}

@@ -38,9 +38,9 @@ export const ContactPage = () => {
 
   return (
     <Section className="bg-blue">
-      <div className="container">
+      <div className="container 4xl:pt-20 2xl:pt-16 md:pt-12.5 pt-10">
 
-        <div className="md:w-[60%] h-full flex flex-col pt-16">
+        <div className="md:w-[60%] h-full flex flex-col pt-16 gap-8">
           <Title>Get in touch with us</Title>
           <SubTitle>
             We would love to hear from you! Whether you're interested in a live
