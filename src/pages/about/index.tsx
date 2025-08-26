@@ -4,6 +4,7 @@ import { Divider } from '../../components/ui/Divider';
 import { Card } from '../../components/ui/Card';
 import { Title } from '../../components/ui/Title';
 import { SubTitle } from '../../components/ui/SubTitle';
+import { ResponsiveCard } from '../../components/ui/ResponsiveCard';
 
 export const AboutPage = () => {
   return (
@@ -25,16 +26,7 @@ export const AboutPage = () => {
 
           <div className="grid xl:grid-cols-3 gap-x-7.5 gap-y-7.5 my-7.5">
             {COMPLEXITIES.map((item) => (
-              <Card key={item.title}>
-                <div>
-                  <div className="font-bold xl:text-xl lg:text-lg text-base mb-0.5">
-                    {item.title}
-                  </div>
-                  <div className="xl:text-lg font-normal lg:text-base text-[15px]">
-                    {item.description}
-                  </div>
-                </div>
-              </Card>
+              <ResponsiveCard key={item.title} title={item.title} description={item.description} />                
             ))}
           </div>
         </div>

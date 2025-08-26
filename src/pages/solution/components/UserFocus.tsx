@@ -3,6 +3,7 @@ import { SubTitle } from '../../../components/ui/SubTitle';
 import { Title } from '../../../components/ui/Title';
 import { USER_TARGETS } from './constants';
 import { Section } from '../../../components/section';
+import { ResponsiveCard } from '../../../components/ui/ResponsiveCard';
 
 export const UserFocus = () => {
   return (
@@ -24,40 +25,9 @@ export const UserFocus = () => {
             <div key={item.title}>
               <h5 className="md:text-left text-center mb-2">{item.title}</h5>
               <div className="grid xl:grid-cols-3 gap-x-7.5 gap-y-7.5 my-7.5">
-                <Card>
-                  <div>
-                    <div className="font-bold xl:text-xl lg:text-lg text-base mb-0.5">
-                      Problem
-                    </div>
-                    <div className="xl:text-lg font-normal lg:text-base text-[15px]">
-                      {item.problem}
-                    </div>
-                  </div>
-                </Card>
-                <Card>
-                  <div>
-                    <div className="font-bold xl:text-xl lg:text-lg text-base mb-0.5">
-                      Solution
-                    </div>
-                    <div className="xl:text-lg font-normal lg:text-base text-[15px]">
-                      {item.solution}
-                    </div>
-                  </div>
-                </Card>
-                <Card>
-                  <div>
-                    <div className="font-bold xl:text-xl lg:text-lg text-base mb-0.5">
-                      Benefit
-                    </div>
-                    <div className="xl:text-lg font-normal lg:text-base text-[15px] pl-6">
-                      <ul className="list-disc">
-                        {item.benefit.map((ben, ind) => (
-                          <li key={ind}>{ben}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </Card>
+                <ResponsiveCard title="Problem" description={item.problem} />
+                <ResponsiveCard title="Solution" description={item.solution} />
+                <ResponsiveCard title="Benefit" description={item.benefit} />
               </div>
             </div>
           ))}
