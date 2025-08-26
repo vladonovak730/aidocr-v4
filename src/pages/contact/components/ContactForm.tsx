@@ -4,7 +4,7 @@ import { useRef, useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { TextInput } from '../../../components/forms/TextInput';
 import { FormWrapper } from '../../../components/forms/FormWrapper';
-import { type Contact, contactFormSchema } from './contants';
+import { type Contact, contactFormSchema } from './constants';
 import { TextArea } from '../../../components/forms/TextArea';
 import { CustomButton } from '../../../components/buttons/CustomButton';
 

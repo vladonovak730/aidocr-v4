@@ -32,7 +32,7 @@ VITE_SITE_KEY=your_site_key_here
 
 ## Step 4: Configure Backend (PHP)
 
-1. Open `public/api/send_email.php`
+1. Open `public/send_email.php`
 2. Replace `YOUR_RECAPTCHA_SECRET_KEY_HERE` with your actual secret key:
 ```php
 $recaptcha_secret = 'your_secret_key_here';
