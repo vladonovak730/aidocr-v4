@@ -28,12 +28,10 @@ export const AboutPage = () => {
               <Card key={item.title}>
                 <div>
                   <div className="font-bold xl:text-xl lg:text-lg text-base mb-0.5">
-                    Escalating operational costs
+                    {item.title}
                   </div>
                   <div className="xl:text-lg font-normal lg:text-base text-[15px]">
-                    Inefficient, manual processes drive up labor costs, increase
-                    error rates, and cause delays of up to 30%. This results in
-                    $177b in avoidable losses every year.
+                    {item.description}
                   </div>
                 </div>
               </Card>
