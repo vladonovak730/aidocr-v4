@@ -23,7 +23,7 @@ export const AboutPage = () => {
             </SubTitle>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-x-7.5 gap-y-7.5 mt-7.5">
+          <div className="grid xl:grid-cols-3 gap-x-9 gap-y-7.5 mt-7.5">
             {COMPLEXITIES.map((item) => (
               <ResponsiveCard key={item.title} title={item.title} description={item.description} />                
             ))}
@@ -36,7 +36,7 @@ export const AboutPage = () => {
       </div>
 
       <Section>
-        <div className="container flex flex-col">
+        <div className="container flex flex-col 4xl:pt-20 2xl:pt-16 md:pt-12.5 pt-10">
           <div className="md:w-[60%] h-full flex flex-col gap-8">
             <Title>We share a big Vision</Title>
             <SubTitle>
@@ -55,11 +55,11 @@ export const AboutPage = () => {
                 alt="workflow"
               />
             </div>
-            <div className="workflow-content flex flex-col gap-4">
+            <div className="workflow-content flex flex-col gap-7.5 py-4">
               {VERSION_OPTIONS.map((item) => (
-                <div key={item.title} className="flex flex-col gap-4">
-                  <Divider />
-                  <h5 className="md:text-left text-center mb-2">{item.title}</h5>
+                <div key={item.title} className="flex flex-col">
+                  <Divider className="mb-7.5" />
+                  <h5 className="md:text-left text-center mb-4">{item.title}</h5>
                   <p className="xl:text-lg font-normal lg:text-base text-[15px] md:text-left text-center">
                     {item.description}
                   </p>

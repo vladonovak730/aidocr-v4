@@ -1,3 +1,4 @@
+import { Section } from '../../../components/section/index.tsx';
 import { Divider } from '../../../components/ui/Divider.tsx';
 import { SubTitle } from '../../../components/ui/SubTitle.tsx';
 import { Title } from '../../../components/ui/Title.tsx';
@@ -5,7 +6,7 @@ import { Title } from '../../../components/ui/Title.tsx';
 export const IntelligenceLayer = () => {
   return (
     <div className="!pt-17.5">
-      <div className="4xl:py-20 2xl:py-16 md:py-12.5 py-10">
+      <Section>
         <div className="container">
           <div className="grid md:grid-cols-2 gap-5 items-center">
             <div className="flex flex-col justify-between h-full 5xl:pb-2 pt-16 py-10 md:items-start items-center">
@@ -40,7 +41,7 @@ export const IntelligenceLayer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Section>
     </div>
   );
 };

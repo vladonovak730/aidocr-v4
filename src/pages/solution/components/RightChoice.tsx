@@ -1,9 +1,10 @@
+import { Section } from '../../../components/section';
 import { Title } from '../../../components/ui/Title';
 import { RIGHT_CHOICES } from './constants';
 
 export const RightChoice = () => {
   return (
-    <div className="4xl:py-20 2xl:py-16 md:py-12.5 py-10">
+    <Section>
       <div className="container flex flex-col gap-8">
         <div className="md:w-[60%] md:py-0 py-10">
           <Title>Why Aidocr Is the Right Choice</Title>
@@ -29,6 +30,6 @@ export const RightChoice = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Section>
   );
 };

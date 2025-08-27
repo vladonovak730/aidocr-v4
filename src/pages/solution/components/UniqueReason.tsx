@@ -1,10 +1,11 @@
+import { Section } from '../../../components/section';
 import { SubTitle } from '../../../components/ui/SubTitle';
 import { Title } from '../../../components/ui/Title';
 import { UNIQUE_REASONS } from './constants';
 
 export const UniqueReason = () => {
   return (
-    <div className="4xl:py-20 2xl:py-16 md:py-12.5 py-10">
+    <Section>
       <div className="container">
         <div className="md:w-[60%] md:py-0 py-10 flex flex-col gap-8">
           <Title>What makes us unique</Title>
@@ -32,6 +33,6 @@ export const UniqueReason = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Section>
   );
 };

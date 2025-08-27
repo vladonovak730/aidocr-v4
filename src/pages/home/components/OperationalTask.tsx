@@ -2,10 +2,11 @@ import { OPERATION_TASKS } from './constants';
 import { Divider } from '../../../components/ui/Divider';
 import { Title } from '../../../components/ui/Title';
 import { SubTitle } from '../../../components/ui/SubTitle';
+import { Section } from '../../../components/section';
 
 export const OperationalTask = () => {
   return (
-    <div className="4xl:py-20 2xl:py-16 md:py-12.5 py-10 bg-blue">
+    <Section className="bg-blue">
       <div className="container">
         <div className="md:w-[60%] pt-16 flex flex-col gap-8">
           <Title>Aidocr is your personal assistant for operational task</Title>
@@ -36,6 +37,6 @@ export const OperationalTask = () => {
           ))}
         </div>
       </div>
-    </div>
+    </Section>
   );
 };

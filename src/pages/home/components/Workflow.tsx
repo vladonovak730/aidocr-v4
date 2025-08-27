@@ -28,7 +28,7 @@ export const Workflow = () => {
             {WORKFLOW_ITEMS.map((task) => (
               <Card key={task.title} className="!bg-transparent !p-0">
                 <div>
-                  <div className="text-title font-bold xl:text-xl lg:text-lg text-base mb-6 md:text-left text-center">
+                  <div className="text-title font-bold xl:text-xl lg:text-lg text-base mb-4 md:text-left text-center">
                     {task.title}
                   </div>
                   <div className="font-normal xl:text-lg lg:text-base text-[15px] md:text-left text-center">
