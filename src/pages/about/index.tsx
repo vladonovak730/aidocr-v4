@@ -8,8 +8,9 @@ import { ResponsiveCard } from '../../components/ui/ResponsiveCard';
 export const AboutPage = () => {
   return (
     <>
+    <div className="!pt-17.5">
       <Section>
-        <div className="container flex flex-col 4xl:pt-20 2xl:pt-16 md:pt-12.5 pt-10">
+        <div className="container flex flex-col">
           <div className="md:w-[60%] h-full flex flex-col pt-16 gap-8">
             <Title>
               We understand the complexity of digitizing a whole industry
@@ -31,12 +32,15 @@ export const AboutPage = () => {
         </div>
       </Section>
 
+    </div>
+      
+
       <div className="container">
         <Divider />
       </div>
 
       <Section>
-        <div className="container flex flex-col 4xl:pt-20 2xl:pt-16 md:pt-12.5 pt-10">
+        <div className="container flex flex-col py-16">
           <div className="md:w-[60%] h-full flex flex-col gap-8">
             <Title>We share a big Vision</Title>
             <SubTitle>

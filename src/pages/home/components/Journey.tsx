@@ -6,7 +6,7 @@ import { Title } from '../../../components/ui/Title';
 export const Journey = () => {
   return (
     <Section>
-      <div className="container flex flex-col gap-8">
+      <div className="container flex flex-col gap-8 py-16">
         <Title className="!text-center">Your Journey to testdrive aidocr</Title>
         <div className="my-7.5 gap-x-9 gap-y-7.5 grid md:grid-cols-2 items-start justify-start max-w-full">
           {JOURNEY.map((item, index) => (

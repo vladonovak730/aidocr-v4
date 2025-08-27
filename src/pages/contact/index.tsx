@@ -37,44 +37,46 @@ export const ContactPage = () => {
   ];
 
   return (
-    <Section className="bg-blue">
-      <div className="container 4xl:pt-20 2xl:pt-16 md:pt-12.5 pt-10">
-
-        <div className="md:w-[60%] h-full flex flex-col pt-16 gap-8">
-          <Title>Get in touch with us</Title>
-          <SubTitle>
-            We would love to hear from you! Whether you're interested in a live
-            demo or discussing how to implement AI in your company, feel free to
-            reach out.
-          </SubTitle>
-        </div>
-
-        <div className="flex-between lg:flex-row flex-col grid xl:grid-cols-2 grid-cols-1 gap-10 mt-7.5">
-          <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
-            <ContactCard
-              image="/assets/static/images/place.svg"
-              title="ADDRESS"
-              contactInfos={addresses}
-            />
-            <ContactCard
-              image="/assets/static/images/chat.svg"
-              title="CALL US"
-              contactInfos={phoneData}
-            />
-            <ContactCard
-              image="/assets/static/images/email.svg"
-              title="E-MAIL US"
-              contactInfos={emails}
-            />
-            <ContactCard
-              image="/assets/static/images/world.svg"
-              title="TIME ZONE"
-              contactInfos={timezone}
-            />
+    <div className="!pt-17.5">
+      <Section className="bg-blue">
+        <div className="container py-16">
+          <div className="md:w-[60%] h-full flex flex-col gap-8">
+            <Title>Get in touch with us</Title>
+            <SubTitle>
+              We would love to hear from you! Whether you're interested in a live
+              demo or discussing how to implement AI in your company, feel free to
+              reach out.
+            </SubTitle>
           </div>
-          <ContactForm />
+
+          <div className="flex-between lg:flex-row flex-col grid xl:grid-cols-2 grid-cols-1 gap-10 mt-7.5">
+            <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
+              <ContactCard
+                image="/assets/static/images/place.svg"
+                title="ADDRESS"
+                contactInfos={addresses}
+              />
+              <ContactCard
+                image="/assets/static/images/chat.svg"
+                title="CALL US"
+                contactInfos={phoneData}
+              />
+              <ContactCard
+                image="/assets/static/images/email.svg"
+                title="E-MAIL US"
+                contactInfos={emails}
+              />
+              <ContactCard
+                image="/assets/static/images/world.svg"
+                title="TIME ZONE"
+                contactInfos={timezone}
+              />
+            </div>
+            <ContactForm />
+          </div>
         </div>
-      </div>
-    </Section>
+      </Section>
+    </div>
+    
   );
 };

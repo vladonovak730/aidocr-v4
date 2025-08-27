@@ -1,3 +1,4 @@
+import { Section } from '../../components/section';
 import { SubTitle } from '../../components/ui/SubTitle';
 import { Title } from '../../components/ui/Title';
 import { RightChoice } from './components/RightChoice';

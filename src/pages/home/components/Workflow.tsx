@@ -7,8 +7,8 @@ import { Title } from '../../../components/ui/Title';
 export const Workflow = () => {
   return (
     <Section id="explore">
-      <div className="container flex flex-col">
-        <div className="pt-16 flex flex-col gap-8">
+      <div className="container flex flex-col py-16">
+        <div className="flex flex-col gap-8">
           <Title className="!text-center">
             Built for everyone in engineering, construction, and operations of
             buildings
