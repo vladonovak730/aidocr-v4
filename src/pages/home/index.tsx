@@ -13,15 +13,15 @@ export const HomePage = () => {
       <OperationalTask />
       <Workflow />
       <div className="container">
-        <Divider />
+        <Divider className="!my-12" />
       </div>
       <Projects />
       <div className="container">
-        <Divider />
+        <Divider className="!my-12" />
       </div>
       <ImmediateValue />
       <div className="container">
-        <Divider />
+        <Divider className="!my-12" />
       </div>
       <Journey />
     </div>

@@ -23,7 +23,7 @@ export const AboutPage = () => {
             </SubTitle>
           </div>
 
-          <div className="grid xl:grid-cols-3 gap-x-7.5 gap-y-7.5 mt-7.5">
+          <div className="grid md:grid-cols-3 gap-x-7.5 gap-y-7.5 mt-7.5">
             {COMPLEXITIES.map((item) => (
               <ResponsiveCard key={item.title} title={item.title} description={item.description} />                
             ))}

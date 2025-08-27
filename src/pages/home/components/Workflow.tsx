@@ -24,11 +24,11 @@ export const Workflow = () => {
             src="/assets/static/images/v4/aidocr_dashboard.png"
             alt="Workflow"
           ></img>
-          <div className="my-7.5 gap-x-9 gap-y-7.5 items-start justify-start max-w-full grid xl:grid-cols-2">
+          <div className="mt-7.5 gap-x-9 gap-y-7.5 items-start justify-start max-w-full grid md:grid-cols-2">
             {WORKFLOW_ITEMS.map((task) => (
               <Card key={task.title} className="!bg-transparent !p-0">
                 <div>
-                  <div className="text-title font-bold xl:text-xl lg:text-lg text-base mb-1 md:text-left text-center">
+                  <div className="text-title font-bold xl:text-xl lg:text-lg text-base mb-6 md:text-left text-center">
                     {task.title}
                   </div>
                   <div className="font-normal xl:text-lg lg:text-base text-[15px] md:text-left text-center">

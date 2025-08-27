@@ -27,8 +27,8 @@ export const Projects = () => {
                 </div>
 
                 <div className="workflow-content">
-                  <div className="flex flex-col gap-4">
-                    <h5 className="mb-2">{item.title}</h5>
+                  <div className="flex flex-col gap-6">
+                    <h5>{item.title}</h5>
                     <div className="flex flex-col gap-8">
                       {item.examples.map((example, ind) => (
                         <p key={ind} className="xl:text-lg font-normal lg:text-base text-[15px]">
