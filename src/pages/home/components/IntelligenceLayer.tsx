@@ -25,7 +25,7 @@ export const IntelligenceLayer = () => {
                   alt="Aidocr, intelligence layer for AECO"
                   className=""
                 />
-                <img className='w-[40%] ml-auto absolute bottom-0 right-0' src="/assets/static/images/building-smart-logo.png" alt="building-smart-logo" />
+                <img className='w-[25%] ml-auto absolute bottom-0 right-0' src="/assets/static/images/building-smart-logo.png" alt="building-smart-logo" />
               </div>              
               <button className="explore-button text-xs w-37.5 bg-white border-none p-0 cursor-pointer text-left hover:bg-primary hover:text-title transition-colors duration-300">
                 <a href="#explore">
@@ -40,7 +40,7 @@ export const IntelligenceLayer = () => {
                 alt="Aidocr, intelligence layer for AECO"
                 className=""
               />
-              <img className='w-1/2 ml-auto absolute bottom-0 right-0' src="/assets/static/images/building-smart-logo.png" alt="building-smart-logo" />
+              <img className='w-[30%] ml-auto absolute bottom-0 right-0' src="/assets/static/images/building-smart-logo.png" alt="building-smart-logo" />
             </div>
           </div>
         </div>
