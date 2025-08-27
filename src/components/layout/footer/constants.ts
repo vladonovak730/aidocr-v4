@@ -33,7 +33,7 @@ export const USEFUL_LINKS = [
   },
   {
     label: 'Book a meeting',
-    link: 'https://calendly.com/christoph-wartmann/30min',
+    link: 'https://app.usemotion.com/meet/robertschoene/30Min',
     target: '_blank',
   },
 ];
