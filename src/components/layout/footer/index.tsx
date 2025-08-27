@@ -26,7 +26,6 @@ export const Footer = () => {
               >
                 aidocr
               </Link>
-              <img className='w-70 mt-7.5 mx-auto' src="/assets/static/images/building-smart-logo.png" alt="building-smart-logo" />
             </div>
            
             <div>

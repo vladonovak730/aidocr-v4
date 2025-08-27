@@ -8,7 +8,7 @@ export const Projects = () => {
   return (
     <Section>
       <div className="container flex flex-col gap-7.5 py-16">
-        <div className="md:w-[60%] md:py-0 py-10 flex flex-col gap-8">
+        <div className="md:w-[60%] flex flex-col gap-8">
           <Title>Chat with BIM, your project- or building knowledge</Title>
           <SubTitle>
             Aidocr makes every step of your daily work simple and significantly

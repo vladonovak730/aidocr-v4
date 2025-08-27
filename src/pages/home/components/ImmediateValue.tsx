@@ -8,7 +8,7 @@ export const ImmediateValue = () => {
   return (
     <Section>
       <div className="container flex flex-col gap-7.5 py-16">
-        <div className="md:w-[60%] md:py-0 py-10 flex flex-col gap-8">
+        <div className="md:w-[60%] flex flex-col gap-8">
           <Title>Immediate value simply by working with Aidocr</Title>
           <SubTitle>
             Stop searching – start finding. Aidocr easily connects to your

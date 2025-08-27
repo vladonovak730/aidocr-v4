@@ -19,11 +19,14 @@ export const IntelligenceLayer = () => {
                   databases, and more. Work like never before - with Aidocr.
                 </SubTitle>
               </div>
-              <img
-                src="/assets/static/images/v4/sketchofbuilding.png"
-                alt="Aidocr, intelligence layer for AECO"
-                className="md:hidden block w-[80%] mx-auto mb-7.5"
-              />
+              <div className='relative md:hidden block w-[80%] mx-auto mb-7.5'>
+                <img
+                  src="/assets/static/images/v4/sketchofbuilding.png"
+                  alt="Aidocr, intelligence layer for AECO"
+                  className=""
+                />
+                <img className='w-[40%] ml-auto absolute bottom-0 right-0' src="/assets/static/images/building-smart-logo.png" alt="building-smart-logo" />
+              </div>              
               <button className="explore-button text-xs w-37.5 bg-white border-none p-0 cursor-pointer text-left hover:bg-primary hover:text-title transition-colors duration-300">
                 <a href="#explore">
                   Explore
@@ -31,12 +34,13 @@ export const IntelligenceLayer = () => {
                 </a>
               </button>
             </div>
-            <div>
+            <div className='relative md:block hidden'>
               <img
                 src="/assets/static/images/v4/sketchofbuilding.png"
                 alt="Aidocr, intelligence layer for AECO"
-                className="md:block hidden"
+                className=""
               />
+              <img className='w-1/2 ml-auto absolute bottom-0 right-0' src="/assets/static/images/building-smart-logo.png" alt="building-smart-logo" />
             </div>
           </div>
         </div>

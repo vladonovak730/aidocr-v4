@@ -5,8 +5,8 @@ import { RIGHT_CHOICES } from './constants';
 export const RightChoice = () => {
   return (
     <Section>
-      <div className="container flex flex-col gap-8">
-        <div className="md:w-[60%] md:py-0 py-10">
+      <div className="container flex py-16 flex-col gap-8">
+        <div className="md:w-[60%]">
           <Title>Why Aidocr Is the Right Choice</Title>
         </div>
         <div>
