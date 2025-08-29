@@ -19,9 +19,9 @@ export const SolutionsList = () => {
                 </div>
                 <div className="workflow-content">
                   <div className="flex flex-col gap-4">
-                    <p className="text-title mb-2 text-2xl font-bold md:text-left text-center">
+                    <h5 className="text-title mb-2 md:text-left text-center">
                       {item.title}
-                    </p>
+                    </h5>
                     <p className="xl:text-lg font-normal lg:text-base text-[15px] md:text-left text-center">
                       {item.description}
                     </p>

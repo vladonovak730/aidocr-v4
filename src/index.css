@@ -63,5 +63,5 @@ textarea {
 }
 
 h5 {
-  @apply text-[25px] font-bold;
+  @apply xl:text-[25px] lg:text-[20px] text-[18px] lg:font-bold;
 }
