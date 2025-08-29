@@ -2,6 +2,8 @@ import { JOURNEY } from './constants';
 import { Section } from '../../../components/section';
 import { Card } from '../../../components/ui/Card';
 import { Title } from '../../../components/ui/Title';
+import { CustomButton } from '../../../components/buttons/CustomButton';
+import { Link } from 'react-router-dom';
 
 export const Journey = () => {
   return (
@@ -28,6 +30,13 @@ export const Journey = () => {
             </Card>
           ))}
         </div>
+        <Link
+          to={"https://app.usemotion.com"}
+          target="_blank"
+          className="md:w-95 w-full 2xl:text-[17px] text-[15px] button transition duration-300 ease font-semibold py-2.5 px-6 text-center rounded-[8px] border border-solid border-blue-light bg-blue-light text-white hover:text-blue-light hover:bg-white mx-auto"
+        >
+          Book a meeting
+        </Link>
         <div className="md:flex-[0.5] md:w-full sm:w-[70%] mx-auto w-[90%] pt-8">
           <img src="/assets/static/images/v4/team2.png" alt="Workflow" />
         </div>

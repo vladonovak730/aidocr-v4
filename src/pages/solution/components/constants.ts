@@ -1,6 +1,6 @@
 export const SOLUTIONS = [
   {
-    image: '/assets/static/images/v4/bim.png',
+    image: '/assets/static/images/v4/searchandfind.png',
     title: 'Search & Find',
     description: 'Aidocr handles intelligent data serach and structuring.',
     solutions: [
@@ -11,7 +11,7 @@ export const SOLUTIONS = [
     ],
   },
   {
-    image: '/assets/static/images/v4/bim.png',
+    image: '/assets/static/images/v4/analyseextract.png',
     title: 'Extract, Interpret, Analyze & Interact',
     description: 'Aidocr answers all your questions and executes your tasks.',
     solutions: [
@@ -21,7 +21,7 @@ export const SOLUTIONS = [
     ],
   },
   {
-    image: '/assets/static/images/v4/bim.png',
+    image: '/assets/static/images/v4/visualise.png',
     title: 'Visualize and generate content',
     description: 'Aidocr delivers visual insights – recurring or on demand.',
     solutions: [
@@ -31,7 +31,7 @@ export const SOLUTIONS = [
     ],
   },
   {
-    image: '/assets/static/images/v4/bim.png',
+    image: '/assets/static/images/v4/workflow.png',
     title: 'Automate your workflows',
     description:
       'Aidocr multistep workflow execution – through Aidocr´s no-code interface.',
