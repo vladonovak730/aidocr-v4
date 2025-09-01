@@ -32,11 +32,11 @@ export const Journey = () => {
         <Link
           to={"https://app.usemotion.com"}
           target="_blank"
-          className="md:w-95 sm:w-[70%] w-[90%] 2xl:text-[17px] mx-auto text-[15px] button transition duration-300 ease font-semibold py-2.5 px-6 text-center rounded-[8px] border border-solid border-blue-light bg-blue-light text-white hover:text-blue-light hover:bg-white"
+          className="md:w-95 w-full 2xl:text-[17px] mx-auto text-[15px] button transition duration-300 ease font-semibold py-2.5 px-6 text-center rounded-[8px] border border-solid border-blue-light bg-blue-light text-white hover:text-blue-light hover:bg-white"
         >
           Book a meeting
         </Link>
-        <div className="md:flex-[0.5] md:w-full sm:w-[70%] mx-auto w-[90%] pt-8">
+        <div className="md:flex-[0.5] w-full mx-auto pt-8">
           <img src="/assets/static/images/v4/team2.png" alt="Workflow" />
         </div>
       </div>
