@@ -30,7 +30,7 @@ export const Journey = () => {
           ))}
         </div>
         <Link
-          to={"https://app.usemotion.com"}
+          to={"https://app.usemotion.com/meet/robertschoene/30Min"}
           target="_blank"
           className="md:w-95 w-full 2xl:text-[17px] mx-auto text-[15px] button transition duration-300 ease font-semibold py-2.5 px-6 text-center rounded-[8px] border border-solid border-blue-light bg-blue-light text-white hover:text-blue-light hover:bg-white"
         >
