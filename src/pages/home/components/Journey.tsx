@@ -2,7 +2,6 @@ import { JOURNEY } from './constants';
 import { Section } from '../../../components/section';
 import { Card } from '../../../components/ui/Card';
 import { Title } from '../../../components/ui/Title';
-import { CustomButton } from '../../../components/buttons/CustomButton';
 import { Link } from 'react-router-dom';
 
 export const Journey = () => {
